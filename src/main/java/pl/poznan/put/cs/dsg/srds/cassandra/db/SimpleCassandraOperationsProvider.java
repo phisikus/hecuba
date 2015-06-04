@@ -16,7 +16,7 @@ public class SimpleCassandraOperationsProvider implements CassandraOperationsPro
 
     public SimpleCassandraOperationsProvider() {
         cluster = Cluster.builder().addContactPoint("localhost").build();
-        session = cluster.connect("Hecuba");
+        session = cluster.connect();
         cassandraOperations = new CassandraTemplate(session);
     }
 
