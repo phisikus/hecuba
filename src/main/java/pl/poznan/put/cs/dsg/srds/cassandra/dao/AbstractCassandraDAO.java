@@ -30,7 +30,7 @@ public abstract class AbstractCassandraDAO<T> {
     }
 
     public T get(UUID id) {
-        return cassandraOperations.selectOne(id.toString(), entityType);
+        return cassandraOperations.selectOneById(entityType, id);
     }
 
     public void update(T entity) {

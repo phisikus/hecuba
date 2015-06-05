@@ -1,5 +1,6 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.model;
 
+import org.springframework.data.cassandra.mapping.Column;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
 import org.springframework.data.cassandra.mapping.Table;
 
@@ -7,16 +8,21 @@ import java.util.List;
 import java.util.UUID;
 
 
-@Table
+@Table(value = "LogEntries")
 public class LogEntry {
 
     @PrimaryKey
     private UUID id;
-    private LogType logType;
+    @Column
+    private String logType;
+    @Column
     private String authorId;
+    @Column
     private Long timeCreated;
+    @Column
     private List<UUID> targets;
-    private Transaction transaction;
+    @Column
+    private String transaction;
 
     @Override
     public String toString() {
@@ -30,14 +36,6 @@ public class LogEntry {
                 '}';
     }
 
-    public Transaction getTransaction() {
-        return transaction;
-    }
-
-    public void setTransaction(Transaction transaction) {
-        this.transaction = transaction;
-    }
-
     public UUID getId() {
         return id;
     }
@@ -46,11 +44,11 @@ public class LogEntry {
         this.id = id;
     }
 
-    public LogType getLogType() {
+    public String getLogType() {
         return logType;
     }
 
-    public void setLogType(LogType logType) {
+    public void setLogType(String logType) {
         this.logType = logType;
     }
 
@@ -78,5 +76,42 @@ public class LogEntry {
         this.targets = targets;
     }
 
+    public String getTransaction() {
+        return transaction;
+    }
 
+    public void setTransaction(String transaction) {
+        this.transaction = transaction;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        LogEntry logEntry = (LogEntry) o;
+
+        if (getId() != null ? !getId().equals(logEntry.getId()) : logEntry.getId() != null) return false;
+        if (getLogType() != null ? !getLogType().equals(logEntry.getLogType()) : logEntry.getLogType() != null)
+            return false;
+        if (getAuthorId() != null ? !getAuthorId().equals(logEntry.getAuthorId()) : logEntry.getAuthorId() != null)
+            return false;
+        if (getTimeCreated() != null ? !getTimeCreated().equals(logEntry.getTimeCreated()) : logEntry.getTimeCreated() != null)
+            return false;
+        if (getTargets() != null ? !getTargets().equals(logEntry.getTargets()) : logEntry.getTargets() != null)
+            return false;
+        return !(getTransaction() != null ? !getTransaction().equals(logEntry.getTransaction()) : logEntry.getTransaction() != null);
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getId() != null ? getId().hashCode() : 0;
+        result = 31 * result + (getLogType() != null ? getLogType().hashCode() : 0);
+        result = 31 * result + (getAuthorId() != null ? getAuthorId().hashCode() : 0);
+        result = 31 * result + (getTimeCreated() != null ? getTimeCreated().hashCode() : 0);
+        result = 31 * result + (getTargets() != null ? getTargets().hashCode() : 0);
+        result = 31 * result + (getTransaction() != null ? getTransaction().hashCode() : 0);
+        return result;
+    }
 }
