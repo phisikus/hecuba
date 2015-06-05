@@ -1,6 +1,7 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.model;
 
 
+import org.springframework.data.annotation.Persistent;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
 import org.springframework.data.cassandra.mapping.Table;
 
@@ -8,6 +9,7 @@ import java.lang.reflect.Type;
 import java.util.UUID;
 
 @Table
+@Persistent
 public class ObjectEntry {
 
     @PrimaryKey

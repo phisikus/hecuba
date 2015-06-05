@@ -1,7 +1,7 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.dao;
 
 import org.springframework.data.cassandra.core.CassandraOperations;
-import pl.poznan.put.cs.dsg.srds.cassandra.db.CassandraOperationsProvider;
+import org.springframework.data.cassandra.core.CassandraTemplate;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -12,13 +12,12 @@ import java.util.UUID;
 public abstract class AbstractCassandraDAO<T> {
 
     protected CassandraOperations cassandraOperations;
-    @Inject
-    private CassandraOperationsProvider cassandraOperationsProvider;
 
     private Class<T> entityType;
 
-    public AbstractCassandraDAO(Class<T> entityType) {
-        this.cassandraOperations = cassandraOperationsProvider.getCassandraOperations();
+    @Inject
+    public AbstractCassandraDAO(CassandraTemplate cassandraTemplate, Class<T> entityType) {
+        this.cassandraOperations = cassandraTemplate;
         this.entityType = entityType;
     }
 
