@@ -2,12 +2,14 @@ package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
 
+import javax.inject.Named;
 import java.util.UUID;
 
 /**
  * Created by phisikus on 06.06.15.
  */
-public class LamportWithTimeoutsCriticalSection implements CriticalSectionManager, Runnable {
+@Named
+public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
 
     public void mainLoop() {
 
