@@ -2,13 +2,10 @@ package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
-import pl.poznan.put.cs.dsg.srds.cassandra.model.LogEntry;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -27,7 +24,11 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
     }
 
     public void acquire(UUID objectId) {
-        listLock.lock();
+
+
+    }
+
+    private Lock createOrGetLock(UUID objectId) {
         Lock objectLock;
         if (!listOfManagedObjectsIds.containsKey(objectId)) {
             objectLock = new ReentrantLock();
@@ -35,9 +36,7 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
         } else {
             objectLock = listOfManagedObjectsIds.get(objectId);
         }
-        listLock.unlock();
-        objectLock.lock();
-
+        return objectLock;
     }
 
     public void release(UUID objectId) {
@@ -52,6 +51,20 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
         } else {
             listLock.unlock();
         }
+    }
+
+    public void acquire(List<UUID> objectIds) {
+        listLock.lock();
+        List<Lock> locks = new ArrayList<Lock>();
+        for(UUID id : objectIds) {
+            createOrGetLock(id).lock();
+        }
+        listLock.unlock();
+
+    }
+
+    public void release(List<UUID> objectId) {
+
     }
 
     public void run() {
