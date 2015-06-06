@@ -12,8 +12,8 @@ public abstract class SharedObject {
         return mapper.writeValueAsString(this);
     }
 
-    public Object fillInFromJSON(String json) throws IOException {
-        return mapper.readValue(json, SharedObject.class);
+    public SharedObject fillInFromJSON(String json) throws IOException {
+        return mapper.readValue(json, this.getClass());
     }
 
 }
