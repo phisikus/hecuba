@@ -4,6 +4,7 @@ import java.util.UUID;
 
 
 public interface ObjectManager {
+    String getNodeId();
     UUID create(SharedObject object);
     SharedObject get(UUID objectId);
     void update(SharedObject object);

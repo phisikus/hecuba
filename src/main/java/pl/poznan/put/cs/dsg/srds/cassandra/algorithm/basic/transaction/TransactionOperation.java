@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.model;
+package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic.transaction;
 
 import java.util.UUID;
 
