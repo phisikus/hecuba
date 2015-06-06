@@ -1,5 +1,6 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 
+import org.springframework.context.annotation.Scope;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
