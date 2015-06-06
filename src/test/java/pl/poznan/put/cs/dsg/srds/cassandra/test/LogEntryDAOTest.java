@@ -15,18 +15,7 @@ public class LogEntryDAOTest extends GenericTest {
 
     @Test
     public void insertDeleteTest() {
-        long unixTime = System.currentTimeMillis() / 1000L;
-        List<UUID> uuids = new ArrayList<UUID>();
-        uuids.add(UUID.randomUUID());
-        uuids.add(UUID.randomUUID());
-        uuids.add(UUID.randomUUID());
-        LogEntry logEntry = new LogEntry();
-        logEntry.setId(UUID.randomUUID());
-        logEntry.setLogType("REQUEST");
-        logEntry.setAuthorId("node1");
-        logEntry.setTimeCreated(unixTime);
-        logEntry.setTransaction("{}");
-        logEntry.setTargets(uuids);
+        LogEntry logEntry = createLogEntry();
         logEntryDAO.create(logEntry);
         LogEntry retrievedObject = logEntryDAO.get(logEntry.getId());
         assert retrievedObject.equals(logEntry);
@@ -36,6 +25,17 @@ public class LogEntryDAOTest extends GenericTest {
 
     @Test
     public void insertUpdateDeleteTest() {
+        LogEntry logEntry = createLogEntry();
+        logEntryDAO.create(logEntry);
+        logEntry.setTimeCreated(0L);
+        logEntryDAO.update(logEntry);
+        LogEntry retrievedObject = logEntryDAO.get(logEntry.getId());
+        assert retrievedObject.equals(logEntry);
+        logEntryDAO.delete(logEntry);
+        assert logEntryDAO.get(logEntry.getId()) == null;
+    }
+
+    private LogEntry createLogEntry() {
         long unixTime = System.currentTimeMillis() / 1000L;
         List<UUID> uuids = new ArrayList<UUID>();
         uuids.add(UUID.randomUUID());
@@ -48,12 +48,20 @@ public class LogEntryDAOTest extends GenericTest {
         logEntry.setTimeCreated(unixTime);
         logEntry.setTransaction("{}");
         logEntry.setTargets(uuids);
-        logEntryDAO.create(logEntry);
-        logEntry.setTimeCreated(0L);
-        logEntryDAO.update(logEntry);
-        LogEntry retrievedObject = logEntryDAO.get(logEntry.getId());
-        assert retrievedObject.equals(logEntry);
-        logEntryDAO.delete(logEntry);
-        assert logEntryDAO.get(logEntry.getId()) == null;
+        return logEntry;
+    }
+
+    @Test
+    public void getAllAndDeleteTest() {
+        List<UUID> createdEntitiesId = new ArrayList<UUID>();
+        for(Integer i=0;i<5;i++) {
+            LogEntry logEntry = createLogEntry();
+            createdEntitiesId.add(logEntry.getId());
+            logEntryDAO.create(logEntry);
+        }
+        logEntryDAO.getAll();
+        for(UUID id : createdEntitiesId) {
+            logEntryDAO.delete(logEntryDAO.get(id));
+        }
     }
 }
