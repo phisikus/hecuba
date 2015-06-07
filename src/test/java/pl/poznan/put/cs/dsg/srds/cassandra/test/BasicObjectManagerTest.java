@@ -2,11 +2,14 @@ package pl.poznan.put.cs.dsg.srds.cassandra.test;
 
 import org.junit.Test;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ExampleSharedObject;
+import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic.BasicObjectManager;
 
 import javax.inject.Inject;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 public class BasicObjectManagerTest extends GenericTest {
@@ -16,27 +19,45 @@ public class BasicObjectManagerTest extends GenericTest {
 
     @Test
     public void createDeleteObjectTest() throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-        ExampleSharedObject object = new ExampleSharedObject();
-        object.setFirstName("John");
-        object.setLastName("Doe");
-        object.setAge(30);
+        ExampleSharedObject object = createExampleSharedObject();
         UUID id = objectManager.create(object);
         ExampleSharedObject exampleSharedObject = (ExampleSharedObject) objectManager.get(id);
         assert object.equals(exampleSharedObject);
         objectManager.delete(id);
     }
 
-    @Test
-    public void createUpdateDeleteObjectTest() throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    private ExampleSharedObject createExampleSharedObject() {
         ExampleSharedObject object = new ExampleSharedObject();
         object.setFirstName("John");
         object.setLastName("Doe");
         object.setAge(30);
-        UUID id = objectManager.create(object);
+        return object;
+    }
+
+    @Test
+    public void createUpdateDeleteObjectTest() throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+        ExampleSharedObject object = createExampleSharedObject();
+        objectManager.create(object);
         object.setAge(11);
-        objectManager.update(id, object);
-        ExampleSharedObject exampleSharedObject = (ExampleSharedObject) objectManager.get(id);
+        objectManager.update(object.getId(), object);
+        ExampleSharedObject exampleSharedObject = (ExampleSharedObject) objectManager.get(object.getId());
         assert object.equals(exampleSharedObject);
-        objectManager.delete(id);
+        objectManager.delete(object.getId());
+    }
+
+    @Test
+    public void createAndFindByTypeTest() throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException {
+        List<SharedObject> objectList = new ArrayList<SharedObject>();
+        List<UUID> objectIds = new ArrayList<UUID>();
+        for (Integer i = 0; i < 5; i++) {
+            SharedObject object = createExampleSharedObject();
+            objectList.add(object);
+            objectIds.add(object.getId());
+        }
+        objectManager.create(objectList);
+        Integer listSize = objectManager.getAllByType(ExampleSharedObject.class).size();
+        assert listSize.equals(5);
+        objectManager.delete(objectIds);
+
     }
 }

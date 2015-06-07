@@ -78,6 +78,11 @@ public class BasicObjectManager implements ObjectManager {
 
     private SharedObject getSharedObject(UUID objectId) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
         ObjectEntry objectEntry = objectEntryDAO.get(objectId);
+        SharedObject object = extractSharedObjectFromObjectEntry(objectEntry);
+        return object;
+    }
+
+    private SharedObject extractSharedObjectFromObjectEntry(ObjectEntry objectEntry) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
         Class objectClass = Class.forName(objectEntry.getObjectType());
         SharedObject object = (SharedObject) objectClass.newInstance();
         object = (SharedObject) object.fillInFromJSON(objectEntry.getContent());
@@ -128,8 +133,16 @@ public class BasicObjectManager implements ObjectManager {
         criticalSectionManager.release(objectIds);
     }
 
+    public List<SharedObject> getAllByType(Class type) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException {
+        List<SharedObject> sharedObjects = new ArrayList<SharedObject>();
+        for (ObjectEntry objectEntry : objectEntryDAO.getAllByType(type.getCanonicalName())) {
+            sharedObjects.add(extractSharedObjectFromObjectEntry(objectEntry));
+        }
+        return sharedObjects;
+    }
+
     private void deleteObjectEntries(List<UUID> objectIds) {
-        for(UUID objectId : objectIds) {
+        for (UUID objectId : objectIds) {
             objectEntryDAO.delete(objectEntryDAO.get(objectId));
         }
     }

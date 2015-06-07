@@ -25,4 +25,6 @@ public interface ObjectManager {
     void update(Map<UUID, SharedObject> idsAndNewObjects) throws IOException;
 
     void delete(List<UUID> objectIds);
+
+    List<SharedObject> getAllByType(Class type) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException;
 }
