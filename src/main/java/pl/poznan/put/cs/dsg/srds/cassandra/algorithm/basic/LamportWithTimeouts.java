@@ -18,6 +18,7 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
     protected Lock listLock = new ReentrantLock();
     protected Map<UUID, Lock> listOfManagedObjectsIds = new HashMap<UUID, Lock>();
     protected Map<List<UUID>, LogEntry> requestLogEntries = new HashMap<List<UUID>, LogEntry>();
+    protected List<UUID> listOfAcquiredObjects = new ArrayList<UUID>();
     protected String nodeId;
 
     @Inject
@@ -53,7 +54,6 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
         }
         LogEntry requestLogEntry = createLogEntryRequest(objectIds);
         requestLogEntries.put(objectIds, requestLogEntry);
-
         waitForAgreements(requestLogEntry, numberOfNodes);
         listLock.lock();
         changeRequestStatusToAquired(requestLogEntry);
@@ -64,6 +64,7 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
     private void changeRequestStatusToAquired(LogEntry requestLogEntry) {
         requestLogEntry.setLogType("ACQUIRED");
         logEntryDAO.update(requestLogEntry);
+        listOfAcquiredObjects.addAll(requestLogEntry.getTargets());
     }
 
     private void waitForAgreements(LogEntry requestLogEntry, Integer numberOfNodes) {
@@ -71,12 +72,11 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
         while (collectedAgreements != (numberOfNodes - 1)) {
             List<LogEntry> entries = logEntryDAO.getAllByParentId(requestLogEntry.getId());
             collectedAgreements = 0;
-            for(LogEntry entry : entries) {
-                if(entry.getLogType().equals("AGREE")) {
+            for (LogEntry entry : entries) {
+                if (entry.getLogType().equals("AGREE")) {
                     collectedAgreements++;
                 }
             }
-
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
@@ -131,6 +131,7 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
     private void changeAquiredStatusToReleased(List<UUID> objectIds) {
         LogEntry logEntry = requestLogEntries.get(objectIds);
         requestLogEntries.remove(objectIds);
+        listOfAcquiredObjects.removeAll(objectIds);
         logEntryDAO.delete(logEntry);
     }
 
