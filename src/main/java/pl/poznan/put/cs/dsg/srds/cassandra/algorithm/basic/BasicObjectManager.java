@@ -3,6 +3,7 @@ package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
+import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
 import pl.poznan.put.cs.dsg.srds.cassandra.dao.ObjectEntryDAO;
 import pl.poznan.put.cs.dsg.srds.cassandra.model.ObjectEntry;
 
@@ -15,16 +16,20 @@ import java.util.*;
 @Named
 public class BasicObjectManager implements ObjectManager {
 
+
     private String nodeId;
 
-    @Inject
     private CriticalSectionManager criticalSectionManager;
 
     @Inject
     private ObjectEntryDAO objectEntryDAO;
 
+    @Inject
+    private LogEntryDAO logEntryDAO;
+
     public BasicObjectManager() {
         nodeId = UUID.randomUUID().toString();
+        criticalSectionManager = new LamportWithTimeouts(nodeId, logEntryDAO);
         Thread lamportThread = new Thread(criticalSectionManager, nodeId);
         lamportThread.start();
     }
