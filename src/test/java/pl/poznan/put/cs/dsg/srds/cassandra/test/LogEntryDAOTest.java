@@ -46,7 +46,7 @@ public class LogEntryDAOTest extends GenericTest {
         logEntry.setLogType("REQUEST");
         logEntry.setAuthorId("node1");
         logEntry.setTimeCreated(unixTime);
-        logEntry.setTransaction("{}");
+        logEntry.setParent(UUID.randomUUID());
         logEntry.setTargets(uuids);
         return logEntry;
     }

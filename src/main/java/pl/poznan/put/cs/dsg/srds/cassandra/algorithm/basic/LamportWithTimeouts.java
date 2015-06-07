@@ -2,6 +2,7 @@ package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
+import pl.poznan.put.cs.dsg.srds.cassandra.model.LogEntry;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -44,7 +45,13 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
             lock.lock();
         }
         // wyślij request o sekcję krytyczną i poczekaj na zgody
+        LogEntry requestLogEntry = createLogEntryRequest(objectIds);
+    }
 
+    private LogEntry createLogEntryRequest(List<UUID> objectIds) {
+        LogEntry requestLogEntry = new LogEntry();
+        //logEntryDAO.create()
+        return null;
     }
 
     private Lock createOrGetLock(UUID objectId) {

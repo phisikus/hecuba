@@ -22,7 +22,7 @@ public class LogEntry {
     @Column
     private List<UUID> targets;
     @Column
-    private String transaction;
+    private UUID parent;
 
     @Override
     public String toString() {
@@ -32,7 +32,7 @@ public class LogEntry {
                 ", authorId='" + authorId + '\'' +
                 ", timeCreated=" + timeCreated +
                 ", targets=" + targets +
-                ", transaction=" + transaction +
+                ", parent=" + parent +
                 '}';
     }
 
@@ -76,12 +76,12 @@ public class LogEntry {
         this.targets = targets;
     }
 
-    public String getTransaction() {
-        return transaction;
+    public UUID getParent() {
+        return parent;
     }
 
-    public void setTransaction(String transaction) {
-        this.transaction = transaction;
+    public void setParent(UUID parent) {
+        this.parent = parent;
     }
 
     @Override
@@ -100,7 +100,7 @@ public class LogEntry {
             return false;
         if (getTargets() != null ? !getTargets().equals(logEntry.getTargets()) : logEntry.getTargets() != null)
             return false;
-        return !(getTransaction() != null ? !getTransaction().equals(logEntry.getTransaction()) : logEntry.getTransaction() != null);
+        return !(getParent() != null ? !getParent().equals(logEntry.getParent()) : logEntry.getParent() != null);
 
     }
 
@@ -111,7 +111,7 @@ public class LogEntry {
         result = 31 * result + (getAuthorId() != null ? getAuthorId().hashCode() : 0);
         result = 31 * result + (getTimeCreated() != null ? getTimeCreated().hashCode() : 0);
         result = 31 * result + (getTargets() != null ? getTargets().hashCode() : 0);
-        result = 31 * result + (getTransaction() != null ? getTransaction().hashCode() : 0);
+        result = 31 * result + (getParent() != null ? getParent().hashCode() : 0);
         return result;
     }
 }

@@ -1,5 +1,5 @@
 CREATE KEYSPACE IF NOT EXISTS Hecuba WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
 use hecuba ;
-CREATE TABLE IF NOT EXISTS LogEntries (id uuid, logType text, authorId text, timeCreated bigInt, targets list<uuid>, transaction text, PRIMARY KEY (id) );
+CREATE TABLE IF NOT EXISTS LogEntries (id uuid, logType text, authorId text, timeCreated bigInt, targets list<uuid>, parent uuid, PRIMARY KEY (id) );
 CREATE TABLE IF NOT EXISTS ObjectEntries (objectId uuid, objectType text, authorId text, lastUpdate bigint, version bigint, content text, PRIMARY KEY (objectId) );
 create INDEX objectentries_objecttype_idx on hecuba.objectentries (objecttype);
