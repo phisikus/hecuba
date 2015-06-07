@@ -28,4 +28,10 @@ public class LogEntryDAO extends AbstractCassandraDAO<LogEntry> {
         query.where(QueryBuilder.eq("parent", parentId));
         return cassandraOperations.select(query, LogEntry.class);
     }
+
+    public List<LogEntry> getAllByType(String logType) {
+        Select query = QueryBuilder.select().from("logentries");
+        query.where(QueryBuilder.eq("logType", logType));
+        return cassandraOperations.select(query, LogEntry.class);
+    }
 }

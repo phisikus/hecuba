@@ -18,7 +18,7 @@ public class BasicObjectManager implements ObjectManager {
 
     private String nodeId;
 
-    private LamportWithTimeouts criticalSectionManager;
+    private LamportLikeMutualExclusion criticalSectionManager;
 
     @Inject
     private ObjectEntryDAO objectEntryDAO;
@@ -31,7 +31,7 @@ public class BasicObjectManager implements ObjectManager {
     }
 
     @Inject
-    private void setCriticalSectionManager(LamportWithTimeouts criticalSectionManager) {
+    private void setCriticalSectionManager(LamportLikeMutualExclusion criticalSectionManager) {
         this.criticalSectionManager  = criticalSectionManager;
         criticalSectionManager.setNodeId(nodeId);
         Thread lamportThread = new Thread(criticalSectionManager, nodeId);
