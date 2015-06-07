@@ -1,9 +1,6 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.algorithm;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
-
-import java.io.IOException;
 
 public class ExampleSharedObject extends SharedObject {
 

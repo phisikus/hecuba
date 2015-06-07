@@ -1,6 +1,5 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
 import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
@@ -88,14 +87,13 @@ public class BasicObjectManager implements ObjectManager {
 
     private SharedObject getSharedObject(UUID objectId) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
         ObjectEntry objectEntry = objectEntryDAO.get(objectId);
-        SharedObject object = extractSharedObjectFromObjectEntry(objectEntry);
-        return object;
+        return extractSharedObjectFromObjectEntry(objectEntry);
     }
 
     private SharedObject extractSharedObjectFromObjectEntry(ObjectEntry objectEntry) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IOException {
         Class objectClass = Class.forName(objectEntry.getObjectType());
         SharedObject object = (SharedObject) objectClass.newInstance();
-        object = (SharedObject) object.fillInFromJSON(objectEntry.getContent());
+        object = object.fillInFromJSON(objectEntry.getContent());
         return object;
     }
 

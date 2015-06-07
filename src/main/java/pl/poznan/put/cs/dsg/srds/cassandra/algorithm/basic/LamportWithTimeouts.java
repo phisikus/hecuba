@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
 @Named
 public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
 
-    protected Lock managerLock = new ReentrantLock();
+    protected Lock listLock = new ReentrantLock();
     protected Map<UUID, Lock> listOfManagedObjectsIds = new HashMap<UUID, Lock>();
     protected Map<List<UUID>, LogEntry> requestLogEntries = new HashMap<List<UUID>, LogEntry>();
     protected String nodeId;
@@ -32,8 +32,8 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
 
     public void mainLoop() {
         while (true) {
-            managerLock.lock();
-            managerLock.unlock();
+            listLock.lock();
+            listLock.unlock();
         }
     }
 
@@ -41,24 +41,23 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
         this.acquire(Arrays.asList(objectId));
     }
 
-
     public void acquire(List<UUID> objectIds) {
-        managerLock.lock();
+        listLock.lock();
         List<Lock> locks = new ArrayList<Lock>();
         for (UUID id : objectIds) {
             locks.add(createOrGetLock(id));
         }
-
+        listLock.unlock();
         for (Lock lock : locks) {
             lock.lock();
         }
         LogEntry requestLogEntry = createLogEntryRequest(objectIds);
         requestLogEntries.put(objectIds, requestLogEntry);
-        managerLock.unlock();
+
         waitForAgreements(requestLogEntry, numberOfNodes);
-        managerLock.lock();
+        listLock.lock();
         changeRequestStatusToAquired(requestLogEntry);
-        managerLock.unlock();
+        listLock.unlock();
 
     }
 
@@ -116,17 +115,17 @@ public class LamportWithTimeouts implements CriticalSectionManager, Runnable {
 
 
     public void release(List<UUID> objectIds) {
-        managerLock.lock();
+        listLock.lock();
         changeAquiredStatusToReleased(objectIds);
         for (UUID objectId : objectIds) {
-            Lock objectLock = null;
+            Lock objectLock;
             if (listOfManagedObjectsIds.containsKey(objectId)) {
                 objectLock = listOfManagedObjectsIds.get(objectId);
                 listOfManagedObjectsIds.remove(objectId);
                 objectLock.unlock();
             }
         }
-        managerLock.unlock();
+        listLock.unlock();
     }
 
     private void changeAquiredStatusToReleased(List<UUID> objectIds) {
