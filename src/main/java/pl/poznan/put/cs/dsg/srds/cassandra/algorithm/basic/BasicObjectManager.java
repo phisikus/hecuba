@@ -19,7 +19,7 @@ public class BasicObjectManager implements ObjectManager {
 
     private String nodeId;
 
-    private CriticalSectionManager criticalSectionManager;
+    private LamportWithTimeouts criticalSectionManager;
 
     @Inject
     private ObjectEntryDAO objectEntryDAO;
@@ -29,7 +29,12 @@ public class BasicObjectManager implements ObjectManager {
 
     public BasicObjectManager() {
         nodeId = UUID.randomUUID().toString();
-        criticalSectionManager = new LamportWithTimeouts(nodeId, logEntryDAO);
+    }
+
+    @Inject
+    private void setCriticalSectionManager(LamportWithTimeouts criticalSectionManager) {
+        this.criticalSectionManager  = criticalSectionManager;
+        criticalSectionManager.setNodeId(nodeId);
         Thread lamportThread = new Thread(criticalSectionManager, nodeId);
         lamportThread.start();
     }

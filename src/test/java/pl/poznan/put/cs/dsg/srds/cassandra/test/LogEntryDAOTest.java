@@ -59,7 +59,25 @@ public class LogEntryDAOTest extends GenericTest {
             createdEntitiesId.add(logEntry.getId());
             logEntryDAO.create(logEntry);
         }
-        logEntryDAO.getAll();
+        Integer dataSize = logEntryDAO.getAll().size();
+        assert  dataSize.equals(5);
+        for(UUID id : createdEntitiesId) {
+            logEntryDAO.delete(logEntryDAO.get(id));
+        }
+    }
+
+    @Test
+    public void getAllByParentTest() {
+        List<UUID> createdEntitiesId = new ArrayList<UUID>();
+        LogEntry parent = createLogEntry();
+        for(Integer i=0;i<5;i++) {
+            LogEntry logEntry = createLogEntry();
+            logEntry.setParent(parent.getId());
+            createdEntitiesId.add(logEntry.getId());
+            logEntryDAO.create(logEntry);
+        }
+        Integer dataSize = logEntryDAO.getAllByParentId(parent.getId()).size();
+        assert dataSize.equals(5);
         for(UUID id : createdEntitiesId) {
             logEntryDAO.delete(logEntryDAO.get(id));
         }
