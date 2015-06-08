@@ -65,11 +65,9 @@ public class BasicObjectManager implements ObjectManager {
         for (SharedObject object : objects) {
             ids.add(object.getId());
         }
-        criticalSectionManager.acquire(ids);
         for (SharedObject object : objects) {
             createObjectEntry(object, object.getId());
         }
-        criticalSectionManager.release(ids);
         return ids;
     }
 
