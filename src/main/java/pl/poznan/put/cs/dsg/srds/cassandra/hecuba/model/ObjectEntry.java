@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.model;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model;
 
 
 import org.springframework.data.cassandra.mapping.Column;

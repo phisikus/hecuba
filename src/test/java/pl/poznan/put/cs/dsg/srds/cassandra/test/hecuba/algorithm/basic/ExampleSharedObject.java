@@ -1,6 +1,6 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.test.algorithm.basic;
+package pl.poznan.put.cs.dsg.srds.cassandra.test.hecuba.algorithm.basic;
 
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.SharedObject;
 
 public class ExampleSharedObject extends SharedObject {
 

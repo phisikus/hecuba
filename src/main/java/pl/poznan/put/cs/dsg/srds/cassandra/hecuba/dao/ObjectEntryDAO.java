@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.dao;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao;
 
 
 import com.datastax.driver.core.querybuilder.QueryBuilder;
@@ -6,7 +6,7 @@ import com.datastax.driver.core.querybuilder.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.cassandra.core.CassandraTemplate;
-import pl.poznan.put.cs.dsg.srds.cassandra.model.ObjectEntry;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model.ObjectEntry;
 
 import javax.inject.Inject;
 import javax.inject.Named;

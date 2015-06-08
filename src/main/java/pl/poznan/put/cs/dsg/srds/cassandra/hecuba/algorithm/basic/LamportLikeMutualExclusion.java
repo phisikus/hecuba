@@ -1,10 +1,10 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.basic;
 
 import com.google.common.collect.Sets;
 import org.springframework.beans.factory.annotation.Value;
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.CriticalSectionManager;
-import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
-import pl.poznan.put.cs.dsg.srds.cassandra.model.LogEntry;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.CriticalSectionManager;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.LogEntryDAO;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model.LogEntry;
 
 import javax.inject.Inject;
 import javax.inject.Named;

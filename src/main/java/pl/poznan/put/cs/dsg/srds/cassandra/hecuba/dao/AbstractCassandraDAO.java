@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.dao;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao;
 
 import org.springframework.data.cassandra.core.CassandraOperations;
 import org.springframework.data.cassandra.core.CassandraTemplate;

@@ -1,14 +1,11 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.test.dao;
+package pl.poznan.put.cs.dsg.srds.cassandra.test.hecuba.dao;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.data.cassandra.core.CassandraOperations;
 import org.springframework.data.cassandra.core.CassandraTemplate;
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
-import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
-import pl.poznan.put.cs.dsg.srds.cassandra.model.LogEntry;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.LogEntryDAO;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model.LogEntry;
 import pl.poznan.put.cs.dsg.srds.cassandra.test.GenericTest;
 
 import javax.inject.Inject;

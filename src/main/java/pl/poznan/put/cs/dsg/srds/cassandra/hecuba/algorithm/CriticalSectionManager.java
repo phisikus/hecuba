@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.algorithm;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm;
 
 import java.util.List;
 import java.util.UUID;

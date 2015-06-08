@@ -1,8 +1,8 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.test.algorithm.basic;
+package pl.poznan.put.cs.dsg.srds.cassandra.test.hecuba.algorithm.basic;
 
 import org.junit.Test;
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic.BasicObjectManager;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.SharedObject;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.basic.BasicObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.test.GenericTest;
 
 import javax.inject.Inject;

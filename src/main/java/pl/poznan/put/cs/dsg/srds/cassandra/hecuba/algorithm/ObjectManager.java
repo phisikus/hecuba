@@ -1,4 +1,4 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.algorithm;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;

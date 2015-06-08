@@ -1,11 +1,11 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
+package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.basic;
 
 import org.springframework.context.annotation.Lazy;
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
-import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
-import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
-import pl.poznan.put.cs.dsg.srds.cassandra.dao.ObjectEntryDAO;
-import pl.poznan.put.cs.dsg.srds.cassandra.model.ObjectEntry;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.ObjectManager;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.SharedObject;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.LogEntryDAO;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.ObjectEntryDAO;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model.ObjectEntry;
 
 import javax.inject.Inject;
 import javax.inject.Named;

@@ -1,8 +1,8 @@
-package pl.poznan.put.cs.dsg.srds.cassandra.test.dao;
+package pl.poznan.put.cs.dsg.srds.cassandra.test.hecuba.dao;
 
 import org.junit.Test;
-import pl.poznan.put.cs.dsg.srds.cassandra.dao.ObjectEntryDAO;
-import pl.poznan.put.cs.dsg.srds.cassandra.model.ObjectEntry;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.ObjectEntryDAO;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model.ObjectEntry;
 import pl.poznan.put.cs.dsg.srds.cassandra.test.GenericTest;
 
 import javax.inject.Inject;
