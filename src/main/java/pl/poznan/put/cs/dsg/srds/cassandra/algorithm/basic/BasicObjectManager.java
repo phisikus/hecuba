@@ -1,5 +1,6 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.algorithm.basic;
 
+import org.springframework.context.annotation.Lazy;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.SharedObject;
 import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
@@ -13,6 +14,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 @Named
+@Lazy
 public class BasicObjectManager implements ObjectManager {
 
 

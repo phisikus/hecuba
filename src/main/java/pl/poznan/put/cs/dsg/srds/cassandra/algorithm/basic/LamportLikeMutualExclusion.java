@@ -20,6 +20,7 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
     protected Map<UUID, Lock> listOfManagedObjectsIds = new HashMap<UUID, Lock>();
     protected Map<List<UUID>, LogEntry> requestLogEntries = new HashMap<List<UUID>, LogEntry>();
     protected List<UUID> listOfAcquiredObjects = new ArrayList<UUID>();
+    protected List<LogEntry> logEntriesSent = new ArrayList<>();
     protected String nodeId;
 
     @Inject
@@ -96,7 +97,22 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
         logEntry.setParent(id);
         logEntry.setTimeCreated(unixTime);
         logEntry.setTargets(null);
-        logEntryDAO.create(logEntry);
+        if (!weEnteredThatAlready(logEntry)) {
+            logEntryDAO.create(logEntry);
+        }
+    }
+
+    private boolean weEnteredThatAlready(LogEntry logEntry) {
+        for(LogEntry existingEntry : logEntriesSent) {
+            if(
+                    logEntry.getAuthorId().equals(existingEntry.getAuthorId())&&
+                    logEntry.getLogType().equals(existingEntry.getLogType())&&
+                    logEntry.getParent().equals(existingEntry.getParent())&&
+                    logEntry.getTargets().equals(existingEntry.getTargets())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private List<LogEntry> getRequestsNotConflictingWithAcquiredObjects(List<LogEntry> logEntries) {
