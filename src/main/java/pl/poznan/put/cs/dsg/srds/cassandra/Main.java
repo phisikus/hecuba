@@ -6,6 +6,7 @@ import pl.poznan.put.cs.dsg.srds.cassandra.railroad.TrainManager;
 
 public class Main {
 
+    // mvn exec:java -Dexec.mainClass="pl.poznan.put.cs.dsg.srds.cassandra.Main"
     public static void main(String[] args) {
         try {
             new AnnotationConfigApplicationContext("pl.poznan.put.cs.dsg").getBean(TrainManager.class).init(args);

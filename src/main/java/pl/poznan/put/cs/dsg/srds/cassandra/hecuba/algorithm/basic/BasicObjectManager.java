@@ -36,7 +36,7 @@ public class BasicObjectManager implements ObjectManager {
 
     @Inject
     private void setCriticalSectionManager(LamportLikeMutualExclusion criticalSectionManager) {
-        this.criticalSectionManager  = criticalSectionManager;
+        this.criticalSectionManager = criticalSectionManager;
         criticalSectionManager.setNodeId(nodeId);
         lamportThread = new Thread(criticalSectionManager, nodeId);
         lamportThread.start();
@@ -44,7 +44,7 @@ public class BasicObjectManager implements ObjectManager {
 
     protected void finalize() throws Throwable {
         try {
-            if(lamportThread != null) {
+            if (lamportThread != null) {
                 lamportThread.interrupt();
             }
         } finally {
