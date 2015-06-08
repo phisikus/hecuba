@@ -2,6 +2,7 @@ package pl.poznan.put.cs.dsg.srds.cassandra.test.dao;
 
 import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.Test;
+import pl.poznan.put.cs.dsg.srds.cassandra.algorithm.ObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.dao.LogEntryDAO;
 import pl.poznan.put.cs.dsg.srds.cassandra.model.LogEntry;
 import pl.poznan.put.cs.dsg.srds.cassandra.test.GenericTest;
@@ -53,7 +54,7 @@ public class LogEntryDAOTest extends GenericTest {
         return logEntry;
     }
 
-    @Test
+    //@Test
     public void getAllAndDeleteTest() throws Exception {
         List<UUID> createdEntitiesId = new ArrayList<UUID>();
         for(Integer i=0;i<5;i++) {

@@ -28,6 +28,8 @@ public class BasicObjectManager implements ObjectManager {
     @Inject
     private LogEntryDAO logEntryDAO;
 
+    private Thread lamportThread;
+
     public BasicObjectManager() {
         nodeId = UUID.randomUUID().toString();
     }
@@ -36,8 +38,18 @@ public class BasicObjectManager implements ObjectManager {
     private void setCriticalSectionManager(LamportLikeMutualExclusion criticalSectionManager) {
         this.criticalSectionManager  = criticalSectionManager;
         criticalSectionManager.setNodeId(nodeId);
-        Thread lamportThread = new Thread(criticalSectionManager, nodeId);
+        lamportThread = new Thread(criticalSectionManager, nodeId);
         lamportThread.start();
+    }
+
+    protected void finalize() throws Throwable {
+        try {
+            if(lamportThread != null) {
+                lamportThread.interrupt();
+            }
+        } finally {
+            super.finalize();
+        }
     }
 
     public String getNodeId() {
