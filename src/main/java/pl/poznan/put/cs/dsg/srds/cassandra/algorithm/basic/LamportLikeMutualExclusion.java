@@ -40,6 +40,12 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
             List<LogEntry> remainingEntries = getRequestsNotConflictingWithAcquiredObjects(logEntriesNotMine);
             agreeToRequestsThatAreLegitimate(remainingEntries);
             listLock.unlock();
+
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
