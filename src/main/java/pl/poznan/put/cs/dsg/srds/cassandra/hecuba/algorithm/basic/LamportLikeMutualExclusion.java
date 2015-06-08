@@ -1,6 +1,8 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.basic;
 
 import com.google.common.collect.Sets;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.LogEntryDAO;
@@ -16,13 +18,13 @@ import java.util.concurrent.locks.ReentrantLock;
 @Named
 public class LamportLikeMutualExclusion implements CriticalSectionManager, Runnable {
 
+    private static final Logger LOG = LoggerFactory.getLogger(LamportLikeMutualExclusion.class);
     protected Lock listLock = new ReentrantLock();
     protected Map<UUID, Lock> listOfManagedObjectsIds = new HashMap<UUID, Lock>();
     protected Map<List<UUID>, LogEntry> requestLogEntries = new HashMap<List<UUID>, LogEntry>();
     protected List<UUID> listOfAcquiredObjects = new ArrayList<UUID>();
     protected List<LogEntry> logEntriesSent = new ArrayList<>();
     protected String nodeId;
-
     @Inject
     protected LogEntryDAO logEntryDAO;
 
@@ -103,12 +105,12 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
     }
 
     private boolean weEnteredThatAlready(LogEntry logEntry) {
-        for(LogEntry existingEntry : logEntriesSent) {
-            if(
-                    logEntry.getAuthorId().equals(existingEntry.getAuthorId())&&
-                    logEntry.getLogType().equals(existingEntry.getLogType())&&
-                    logEntry.getParent().equals(existingEntry.getParent())&&
-                    logEntry.getTargets().equals(existingEntry.getTargets())) {
+        for (LogEntry existingEntry : logEntriesSent) {
+            if (
+                    logEntry.getAuthorId().equals(existingEntry.getAuthorId()) &&
+                            logEntry.getLogType().equals(existingEntry.getLogType()) &&
+                            logEntry.getParent().equals(existingEntry.getParent()) &&
+                            logEntry.getTargets().equals(existingEntry.getTargets())) {
                 return true;
             }
         }
@@ -163,6 +165,7 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
             for (LogEntry entry : entries) {
                 if (entry.getLogType().equals("AGREE")) {
                     collectedAgreements++;
+                    LOG.info("received agreement: " + entry.toString());
                 }
             }
             try {
@@ -183,6 +186,7 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
         requestLogEntry.setTargets(objectIds);
         requestLogEntry.setTimeCreated(unixTime);
         logEntryDAO.create(requestLogEntry);
+        LOG.info("creating: " + requestLogEntry.toString());
         return requestLogEntry;
     }
 
@@ -220,8 +224,11 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
         LogEntry logEntry = requestLogEntries.get(objectIds);
         requestLogEntries.remove(objectIds);
         listOfAcquiredObjects.removeAll(objectIds);
+        LOG.info("deleting: " + logEntry.toString());
         logEntryDAO.delete(logEntry);
         logEntryDAO.getAllByParentId(logEntry.getId()).forEach(entry -> logEntryDAO.delete(entry));
+
+
     }
 
     public void run() {

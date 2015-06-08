@@ -17,6 +17,8 @@ public class TrainManager {
 
     public void init(String[] args) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
 
+        System.out.println("\nStart!\n");
+
         Train firstTrain = new Train("Pociąg Batory", 150);
         Map<String, String> seats = firstTrain.getSeats();
         seats.put("A1", "Adam Nowak");
