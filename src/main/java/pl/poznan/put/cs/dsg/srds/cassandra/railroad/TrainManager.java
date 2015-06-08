@@ -1,8 +1,5 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.railroad;
 
-import com.googlecode.lanterna.TerminalFacade;
-import com.googlecode.lanterna.screen.Screen;
-import com.googlecode.lanterna.terminal.Terminal;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.ObjectManager;
 
 import javax.inject.Inject;
