@@ -1,0 +1,45 @@
+Projekt HECUBA (imię matki Cassandry ;-) )
+
+Jest to implementacja mechanizmu współdzielonych obiektów opartego o bazę Cassandra.
+Jedna z tabel (ObjectEntries) odpowiada za przechowywanie serializowanych do formatu JSON obiektów współdzielonych.
+Druga z tabel (LogEntries) odpowiada za komunikację między węzłami, które ustalają kolejność dostępu do obiektów.
+Serializacja dostępu opiera się o algorytm wzorowany na koncepcjach Lamporta/Richarda-Agrawali.
+Węzeł zapisuje w bazie danych wiersz typu REQUEST i oczekuje na potwierdzenia AGREE od innych węzłów.
+Identyfikator węzła (losowe UUID) oraz wartość zegara (zapisana w każdym wierszu logu) są brane pod uwagę w określaniu pierwszeństwa.
+Każdy wpis logu zawiera identyfikator wpisu nadrzędnego (relacja między requestem a potwierdzeniem) co porządkuje komunikację.
+Implementacja zakłada stałą liczbę węzłów utrzymującą komunikację - traktujemy ten system jako middleware.
+
+W katalogu ./cluster znajduje się cassandra i parę skryptów ułatwiających postawienie lokalnie paru węzłów:
+
+./createNodeDirs.sh 3
+./startNodes.sh 3
+./apache-cassandra/bin/cqlsh -f data.cassandra
+
+
+W ten sposób ze wzorcowego katalogu z cassandrą zostaną utworzone trzy podkatalogi gdzie dowiązane będą binarki oraz utworzone niezależne konfiguracje.
+Każdy węzeł ma osobny adres na interfejsie loopback (127.0.0.1, 127.0.0.2 ...) - w powyższym przypadku 3 węzły.
+Plik data.cassandra zawiera schemat bazy danych.
+
+Po odpaleniu bazy danych odpalamy:
+
+mvn clean test
+
+
+Powinny wykonać się testy (może wystąpić nieistotny wyjątek).
+
+
+mvn compile exec:java -Dexec.mainClass="pl.poznan.put.cs.dsg.srds.cassandra.Main"
+
+Polecenie uruchamia klasę "Main" która woła przykładowy "TrainManager", który kilkukrotnie wykonuje różne zmiany na obiekcie "Train".
+
+Implementacja składa się z testów, które mają osobny kontekst i konfigurację oraz trochę mniej eleganckiej konfiguracji aplikacji konsolowej.
+W pliku config.properties znajduje się oczekiwana liczba węzłów:
+
+hecuba.numberOfNodes=1
+
+wartość tę można zmienić na wyższą - aplikacja będzie czekać wówczas na więcej zgód od węzłów.
+
+Podstawową klasą jest SharedObject - klasa, która umie się serializować do JSON'a. Rozszerzając ją tworzymy własne typy współdzielonych obiektów.
+Obiektami zarządza ObjectManager (BasicObjectManager), który korzysta z CriticalSectionManager (LamportLikeMutualExclusion) do wdrożenia logiki algorytmu.
+Ta ostatnia klasa zawiera osobny wątek do akceptowania żądań sąsiadów, który działa na zasadzie okresowego odpytywania i to właśnie ten wątek podczas mvn test potrafi nakrzyczeć, że mu się urwało dostęp do bazy.
+Ogólnie pakiet hecuba zawiera implementację mechanizmu a pakiet railroad przykładowe użycie.
