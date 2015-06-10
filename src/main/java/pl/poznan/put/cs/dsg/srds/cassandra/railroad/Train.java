@@ -46,7 +46,9 @@ public class Train extends SharedObject {
 
     @Override
     public String toString() {
-        String s = "Train name      : " + trainName + '\n' +
+        String s =
+                "ID              : " + getId().toString() + "\n" +
+                "Train name      : " + trainName + '\n' +
                 "Number of seats : " + numberOfSeats.toString() + '\n' +
                 "Tickets:\n";
         for (String key : seats.keySet()) {
