@@ -43,6 +43,38 @@ public class Train extends SharedObject {
         this.seats = seats;
     }
 
+    // return: if true then added, if false then rejected
+    public boolean addSeat(String passenger) {
+        if (this.seats.size() == this.numberOfSeats)
+            return false;
+
+        boolean result = false;
+
+        // SEARCH FOR FIRST EMPTY SEAT
+        for (int i = 0; i < this.numberOfSeats; i++) {
+            if (!this.seats.containsKey(i)) {
+                this.seats.put(i, passenger);
+                result = true;
+                break;
+            }
+        }
+
+        return result;
+    }
+
+    // return: if true then added, if false then rejected
+    public boolean addSeat(int seat, String passenger) {
+        if (seat > this.numberOfSeats - 1 || seat < 0)
+            return false;
+
+        if (this.seats.containsKey(seat))
+            return false;
+
+        this.seats.put(seat, passenger);
+
+        return true;
+    }
+
 
     @Override
     public String toString() {
