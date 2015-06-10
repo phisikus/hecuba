@@ -5,7 +5,6 @@ import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.SharedObject;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.io.Console;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
@@ -23,6 +22,8 @@ public class TrainManager {
     private String[] firstNamesToChoose = { "Adam", "Andrzej", "Anna", "Abercjusz", "Abraham", "Achilles", "Ada", "Adelinda", "Ademar", "Adolf", "Adolfa", "Adolfina", "Adrian", "Adrianna", "Jacek", "Jacenty", "Jacław", "Jaczemir", "Jaczewoj", "Jadwiga", "Jagna", "Jagoda", "Jakert", "Jaktor", "Jakub", "Jakubina", "Jan" };
     private String[] secondNamesToChoose = { "Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Kaczmarek", "Mazur", "Krawczyk", "Adamczyk", "Dudek", "Zając", "Wieczorek", "Król", "Wróbel", "Pawlak", "Walczak", "Stępień", "Michalak", "Sikora", "Baran", "Duda", "Szewczyk", "Pietrzak", "Marciniak", "Bąk", "Włodarczyk", "Kubiak", "Wilk", "Lis", "Mazurek", "Kaźmierczak", "Sobczak", "Cieślak", "Kołodziej", "Szymczak", "Szulc", "Błaszczyk", "Mróz" };
 
+    private Train activeTrain;
+
     public void init(String[] args) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
 
         // GET COMMANDS
@@ -33,6 +34,66 @@ public class TrainManager {
                 String[] commandWords = fullcommand.split(" ");
 
                 switch (commandWords[0]) {
+                    case "act":
+                        if (commandWords.length == 2) {
+                            this.activeTrain = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                            System.out.println("Set activeTrain = \"" + this.activeTrain.getTrainName() + "\"");
+                        }
+                        else
+                            throw new IOException("Zła liczba argumentów.");
+                        break;
+                    case "add":
+                        switch(commandWords[1]) {
+                            case "train":
+                                if (!commandWords[2].matches("^[0-9]+$"))
+                                    throw new IOException("Ilość siedzeń musi być liczbą!");
+
+                                String trainName = getStringFromQuotes(fullcommand);
+
+                                if(trainName.equals(""))
+                                    throw new IOException("Zła nazwa pociągu.");
+                                else {
+                                    Train newTrain = new Train(trainName, Integer.parseInt(commandWords[2]));
+                                    System.out.println(newTrain.toString());
+                                    objectManager.create(newTrain);
+                                }
+                                break;
+                            // TODO
+                            case "seat":
+                                if (this.activeTrain == null)
+                                    throw new IOException("Brak aktywnego pociągu.");
+
+                                if (commandWords.length == 3) {
+                                    String passengerName = getStringFromQuotes(fullcommand);
+
+                                    System.out.println("free " + passengerName);
+                                } else if (commandWords.length == 4) {
+                                    if (!commandWords[2].matches("^[0-9]+$"))
+                                        throw new IOException("Numer siedzenia musi być liczbą.");
+
+                                    String passengerName = getStringFromQuotes(fullcommand);
+                                    System.out.println(commandWords[2] + " " + passengerName);
+                                } else
+                                    throw new IOException("Zła komenda. Spróbuj \"add seat <seatID> \"<passenger>\"\".");
+                                break;
+                            default:
+                                throw new IOException("Zła komenda.");
+                        }
+                        break;
+                    case "delete":
+                        if (commandWords[1].equals("trains") && commandWords.length == 2) {
+                            List<UUID> trainsToDelete = new ArrayList<>();
+                            List<SharedObject> trains = objectManager.getAllByType(Train.class);
+                            for (SharedObject train : trains) {
+                                Train temp = (Train) train;
+                                trainsToDelete.add(temp.getId());
+                            }
+                            objectManager.delete(trainsToDelete);
+                        } else if (commandWords[1].equals("train")) {
+                            objectManager.delete(UUID.fromString(commandWords[2]));
+                        } else
+                            throw new IOException("Zła komenda. Spróbuj 'delete train <trainID>'.");
+                        break;
                     case "get":
                         if (commandWords[1].equals("trains")) {
                             List<SharedObject> trains = objectManager.getAllByType(Train.class);
@@ -47,38 +108,8 @@ public class TrainManager {
                         } else
                             throw new IOException("Zła komenda. Spróbuj 'get trains' albo 'get train <trainID>'.");
                         break;
-                    case "add":
-                        if (!commandWords[1].equals("train"))
-                            throw new IOException("Zła komenda. Spróbuj \"add train <numberOfSeats> '<trainName>'\".");
-
-                        if (!commandWords[2].matches("^[0-9]+$"))
-                            throw new IOException("Ilość siedzeń musi być liczbą!");
-
-                        Pattern trainNamePattern = Pattern.compile("\"[\\w\\s]+\"$");
-                        Matcher matcher = trainNamePattern.matcher(fullcommand);
-
-                        if(!matcher.find())
-                            throw new IOException("Zła nazwa pociągu.");
-                        else {
-                            Train newTrain = new Train(matcher.group(), Integer.parseInt(matcher.group()));
-                            objectManager.create(newTrain);
-                        }
-
-                        break;
-                    case "delete":
-                        if (!commandWords[1].equals("train"))
-                            throw new IOException("Zła komenda. Spróbuj 'delete train <trainID>'.");
-
-                        objectManager.delete(UUID.fromString(commandWords[2]));
-
-                        break;
                     case "help":
-                        System.out.println("Dostępne komendy:" +
-                                        "\n\tget train <trainID>" +
-                                        "\n\tget trains" +
-                                        "\n\tadd train <numberOfSeats> \"<trainName>\"" +
-                                        "\n\tdelete train <trainID>"
-                        );
+                        this.printHelp();
                         break;
                     default:
                         System.out.println("Nieznana komenda");
@@ -95,7 +126,7 @@ public class TrainManager {
                 continue;
             }
             catch(IllegalArgumentException e) {
-                System.out.println("Najprawdopodobniej zły format identyfikatora UUID.");
+                System.out.println("Najprawdopodobniej zły identyfikator UUID.");
                 e.printStackTrace();
                 continue;
             }
@@ -149,4 +180,30 @@ public class TrainManager {
 
     }
 
+    private void printHelp() {
+        System.out.println("Dostępne komendy:" +
+                        "\n\tact <trainID>                              - set train active" +
+                        "\n\tadd seat <seatID> \"<passenger>\"            - add new ticket at pointed place" +
+                        "\n\tadd seat \"<passenger>\"                - add new ticket where nobody sits" +
+                        "\n\tadd train <numberOfSeats> \"<trainName>\"    - add new train" +
+                        "\n\tdelete train <trainID>                     - delete train" +
+                        "\n\tdelete trains                              - delete all trains" +
+                        "\n\tget train <trainID>                        - get train" +
+                        "\n\tget trains                                 - get all trains"
+        );
+    }
+
+    // RETURNS THE NAME OF THE TRAIN (FROM QUOTES) OR "" IF WRONG NAME
+    private String getStringFromQuotes(String fullcommand) throws IOException {
+        if (!fullcommand.matches("^[^\"]+\"[^\"]+\"$"))
+            throw new IOException("Nazwa musi być w ujęta w cudzysłów.");
+
+        Pattern trainNamePattern = Pattern.compile("\"[A-Za-z0-9żźćńółęąśŻŹĆĄŚĘŁÓŃ\\s]+\"$");
+        Matcher matcher = trainNamePattern.matcher(fullcommand);
+
+        if(!matcher.find())
+            return "";
+        else
+            return matcher.group().replaceAll("\"", "");
+    }
 }
