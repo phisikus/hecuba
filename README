@@ -43,3 +43,7 @@ Podstawową klasą jest SharedObject - klasa, która umie się serializować do 
 Obiektami zarządza ObjectManager (BasicObjectManager), który korzysta z CriticalSectionManager (LamportLikeMutualExclusion) do wdrożenia logiki algorytmu.
 Ta ostatnia klasa zawiera osobny wątek do akceptowania żądań sąsiadów, który działa na zasadzie okresowego odpytywania i to właśnie ten wątek podczas mvn test potrafi nakrzyczeć, że mu się urwało dostęp do bazy.
 Ogólnie pakiet hecuba zawiera implementację mechanizmu a pakiet railroad przykładowe użycie.
+
+SCHEMAT BAZ DANYCH:
+CREATE TABLE IF NOT EXISTS LogEntries (id uuid, logType text, authorId text, timeCreated bigInt, targets list<uuid>, parent uuid, PRIMARY KEY (id) );
+CREATE TABLE IF NOT EXISTS ObjectEntries (objectId uuid, objectType text, authorId text, lastUpdate bigint, version bigint, content text, PRIMARY KEY (objectId) );

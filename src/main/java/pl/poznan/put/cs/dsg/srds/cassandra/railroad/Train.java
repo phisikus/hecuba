@@ -3,8 +3,10 @@ package pl.poznan.put.cs.dsg.srds.cassandra.railroad;
 
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.SharedObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 public class Train extends SharedObject {
     private String trainName;
@@ -73,6 +75,56 @@ public class Train extends SharedObject {
         this.seats.put(seat, passenger);
 
         return true;
+    }
+
+    public int addFreeRandomSeat(String passenger) {
+        if (this.seats.size() == this.numberOfSeats)
+            return -1;
+
+        ArrayList<Integer> freeSeats = new ArrayList<>();
+
+        for (int i = 0; i < this.numberOfSeats; i++) {
+            freeSeats.add(i);
+        }
+
+        for (int i = this.seats.size() - 1; i > -1; i--) {
+            if (this.seats.containsKey(i))
+                freeSeats.remove(i);
+        }
+
+        if (freeSeats.size() < 1)
+            return -1;
+
+        Random gen = new Random();
+        int seatTaken = gen.nextInt(freeSeats.size());
+
+        this.seats.put(seatTaken, passenger);
+        freeSeats.remove((Integer) seatTaken);
+
+        return seatTaken;
+    }
+
+    public boolean delSeat(int seat) {
+        if (!this.seats.containsKey(seat) || seat < 0 || seat > this.numberOfSeats)
+            return false;
+
+        this.seats.remove(seat);
+        return true;
+    }
+
+    public int delRandomSeat() {
+        ArrayList<Integer> busySeats = new ArrayList<>();
+
+        for (int i = 0; i < this.seats.size(); i++) {
+            busySeats.add(i);
+        }
+
+        Random gen = new Random();
+        int seatToDel = gen.nextInt(busySeats.size());
+
+        this.seats.remove(seatToDel);
+
+        return seatToDel;
     }
 
 

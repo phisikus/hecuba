@@ -10,6 +10,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,6 +26,9 @@ public class TrainManager {
     private String[] firstNamesToChoose = { "Adam", "Andrzej", "Anna", "Abercjusz", "Abraham", "Achilles", "Ada", "Adelinda", "Ademar", "Adolf", "Adolfa", "Adolfina", "Adrian", "Adrianna", "Jacek", "Jacenty", "Jacław", "Jaczemir", "Jaczewoj", "Jadwiga", "Jagna", "Jagoda", "Jakert", "Jaktor", "Jakub", "Jakubina", "Jan" };
     private String[] secondNamesToChoose = { "Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Kaczmarek", "Mazur", "Krawczyk", "Adamczyk", "Dudek", "Zając", "Wieczorek", "Król", "Wróbel", "Pawlak", "Walczak", "Stępień", "Michalak", "Sikora", "Baran", "Duda", "Szewczyk", "Pietrzak", "Marciniak", "Bąk", "Włodarczyk", "Kubiak", "Wilk", "Lis", "Mazurek", "Kaźmierczak", "Sobczak", "Cieślak", "Kołodziej", "Szymczak", "Szulc", "Błaszczyk", "Mróz" };
 
+    protected Lock lock = new ReentrantLock();
+    private int randomUpBound = 2000;
+    private int randomDownBound = 1000;
     private Train activeTrain;
 
     public void init(String[] args) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
@@ -30,10 +37,13 @@ public class TrainManager {
         while (true) {
             try {
                 BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+                System.out.print("?> ");
                 String fullcommand = bufferRead.readLine();
                 String[] commandWords = fullcommand.split(" ");
 
                 switch (commandWords[0]) {
+                    case "":
+                        break;
                     case "act":
                         if (commandWords.length == 2) {
                             this.activeTrain = (Train) objectManager.get(UUID.fromString(commandWords[1]));
@@ -58,7 +68,6 @@ public class TrainManager {
                                     objectManager.create(newTrain);
                                 }
                                 break;
-                            // TODO
                             case "seat":
                                 if (this.activeTrain == null)
                                     throw new IOException("Brak aktywnego pociągu.");
@@ -140,6 +149,33 @@ public class TrainManager {
                     case "help":
                         this.printHelp();
                         break;
+                    case "randomadd":
+                        Train train = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                        Random gen = new Random();
+
+                        while (true) {
+                            Thread.sleep(gen.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                            String passenger = this.firstNamesToChoose[gen.nextInt(this.firstNamesToChoose.length)] + " " +
+                                    this.secondNamesToChoose[gen.nextInt(this.secondNamesToChoose.length)];
+                            //lock.lock();
+
+                            int seat = train.addFreeRandomSeat(passenger);
+                            if (seat > -1) {
+                                objectManager.update(train.getId(), train);
+                                System.out.println("Dodano pasażera " + passenger + " na miejsce " + seat);
+                            } else {
+                                System.out.println("Nie udało się dodać pasażera " + passenger);
+                            }
+                            //lock.unlock();
+                        }
+                    case "randomdel":
+                        Train trainDel = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                        Random genDel = new Random();
+                        while (true) {
+                            Thread.sleep(genDel.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+
+                            int seat = trainDel.delRandomSeat();
+                        }
                     default:
                         System.out.println("Nieznana komenda");
                         break;
@@ -161,64 +197,26 @@ public class TrainManager {
             }
             catch(ArrayIndexOutOfBoundsException e) {
                 System.out.println("Za mało argumentów.");
+                e.printStackTrace();
                 continue;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
-/*
-        Train firstTrain = new Train("Pociąg Batory", 150);
-        Map<String, String> seats = firstTrain.getSeats();
-        seats.put("A1", "Adam Nowak");
-        seats.put("A2", "Kasia Nowak");
-        seats.put("A3", "Tadeusz Rakowiecki");
-        objectManager.create(firstTrain);
-        seats.put("A4", "Tosia Kowalska");
-        objectManager.update(firstTrain.getId(), firstTrain);
-
-        Train secondTrain = new Train("Pociąg Wielkopolanin", 2);
-        Map<String, String> otherSeats = secondTrain.getSeats();
-        otherSeats.put("B1", "Zuzanna Nowak");
-        otherSeats.put("B2", "Katarzyna Zabłocka");
-        otherSeats.put("B3", "Jan Zych");
-        objectManager.create(secondTrain);
-
-        otherSeats.put("B4", "N/N");
-        seats.put("A5", "N/N");
-
-        Map<UUID, SharedObject> trainsToUpdate = new HashMap<>();
-        trainsToUpdate.put(firstTrain.getId(), firstTrain);
-        trainsToUpdate.put(secondTrain.getId(), secondTrain);
-        objectManager.update(trainsToUpdate);
-
-        List<UUID> trainsToGet = new ArrayList<>();
-        trainsToGet.add(firstTrain.getId());
-        trainsToGet.add(secondTrain.getId());
-        List<SharedObject> trains = objectManager.get(trainsToGet);
-
-        //List<UUID> trainsToGet = new ArrayList<>();
-        //trainsToGet.add(UUID.fromString("76f478e6-a3e8-4c0b-97fa-bdf31fd534af"));
-        //trainsToGet.add(UUID.fromString("c620aa8c-a480-463b-b97f-bc1d0b528b8e"));
-        //List<SharedObject> trains = objectManager.get(trainsToGet);
-        List<SharedObject> trains = objectManager.getAllByType(Train.class);
-
-        for (SharedObject t : trains) {
-            Train train = (Train) t;
-            System.out.println("\n" + train.toString() + "\n");
-        }
-*/
-        //objectManager.delete(trainsToGet);
-
     }
 
     private void printHelp() {
         System.out.println("Dostępne komendy:" +
-                        "\n\tact <trainID>                              - set train active" +
-                        "\n\tadd seat <seatID> \"<passenger>\"            - add new ticket at pointed place" +
-                        "\n\tadd seat \"<passenger>\"                - add new ticket where nobody sits" +
-                        "\n\tadd train <numberOfSeats> \"<trainName>\"    - add new train" +
-                        "\n\tdelete train <trainID>                     - delete train" +
-                        "\n\tdelete trains                              - delete all trains" +
-                        "\n\tget train <trainID>                        - get train" +
-                        "\n\tget trains                                 - get all trains"
+                        "\n  act <trainID>                            - set train active" +
+                        "\n  add seat <seatID> \"<passenger>\"          - add new ticket at pointed place" +
+                        "\n  add seat \"<passenger>\"                   - add new ticket where nobody sits" +
+                        "\n  add train <numberOfSeats> \"<trainName>\"  - add new train" +
+                        "\n  delete train <trainID>                   - delete train" +
+                        "\n  delete trains                            - delete all trains" +
+                        "\n  get train <trainID>                      - get train" +
+                        "\n  get trains                               - get all trains" +
+                        "\n  randomadd <trainID>                      - time-randomized reserving seats" +
+                        "\n  randomdel <trainID>                      - time-randomized deleting seats"
         );
     }
 
