@@ -34,14 +34,6 @@ public class BasicObjectManager implements ObjectManager {
         nodeId = UUID.randomUUID().toString();
     }
 
-    @Inject
-    private void setCriticalSectionManager(LamportLikeMutualExclusion criticalSectionManager) {
-        this.criticalSectionManager = criticalSectionManager;
-        criticalSectionManager.setNodeId(nodeId);
-        lamportThread = new Thread(criticalSectionManager, nodeId);
-        lamportThread.start();
-    }
-
     protected void finalize() throws Throwable {
         try {
             if (lamportThread != null) {
@@ -50,6 +42,18 @@ public class BasicObjectManager implements ObjectManager {
         } finally {
             super.finalize();
         }
+    }
+
+    public LamportLikeMutualExclusion getCriticalSectionManager() {
+        return criticalSectionManager;
+    }
+
+    @Inject
+    private void setCriticalSectionManager(LamportLikeMutualExclusion criticalSectionManager) {
+        this.criticalSectionManager = criticalSectionManager;
+        criticalSectionManager.setNodeId(nodeId);
+        lamportThread = new Thread(criticalSectionManager, nodeId);
+        lamportThread.start();
     }
 
     public String getNodeId() {

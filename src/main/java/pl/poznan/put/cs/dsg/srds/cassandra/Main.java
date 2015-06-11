@@ -9,6 +9,7 @@ public class Main {
     // mvn exec:java -Dexec.mainClass="pl.poznan.put.cs.dsg.srds.cassandra.Main"
     public static void main(String[] args) {
         try {
+            Config.address = args[0];
             new AnnotationConfigApplicationContext("pl.poznan.put.cs.dsg").getBean(TrainManager.class).init(args);
         } catch (Exception e) {
             e.printStackTrace();

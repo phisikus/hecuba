@@ -16,7 +16,7 @@ public class Config {
 
     private static Cluster cluster;
     private static Session session;
-    private static String address = "127.0.0.1";
+    public static String address = "127.0.0.1";
     private static String keyspace = "hecuba";
 
     @Bean

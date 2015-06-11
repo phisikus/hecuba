@@ -28,8 +28,12 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
     @Inject
     protected LogEntryDAO logEntryDAO;
 
-    @Value("${hecuba.numberOfNodes}")
-    protected Integer numberOfNodes;
+    public void setNumberOfNodes(Integer numberOfNodes) {
+        this.numberOfNodes = numberOfNodes;
+    }
+
+    //@Value("${hecuba.numberOfNodes}")
+    protected Integer numberOfNodes = 1;
 
     public void setNodeId(String nodeId) {
         this.nodeId = nodeId;

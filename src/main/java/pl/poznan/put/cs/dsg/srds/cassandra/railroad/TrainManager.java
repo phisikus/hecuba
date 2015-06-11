@@ -1,17 +1,15 @@
 package pl.poznan.put.cs.dsg.srds.cassandra.railroad;
 
-import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.ObjectManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.SharedObject;
+import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.basic.BasicObjectManager;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.*;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.regex.Matcher;
@@ -20,19 +18,18 @@ import java.util.regex.Pattern;
 @Named
 public class TrainManager {
 
-    @Inject
-    private ObjectManager objectManager;
-
-    private String[] firstNamesToChoose = { "Adam", "Andrzej", "Anna", "Abercjusz", "Abraham", "Achilles", "Ada", "Adelinda", "Ademar", "Adolf", "Adolfa", "Adolfina", "Adrian", "Adrianna", "Jacek", "Jacenty", "Jacław", "Jaczemir", "Jaczewoj", "Jadwiga", "Jagna", "Jagoda", "Jakert", "Jaktor", "Jakub", "Jakubina", "Jan" };
-    private String[] secondNamesToChoose = { "Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Kaczmarek", "Mazur", "Krawczyk", "Adamczyk", "Dudek", "Zając", "Wieczorek", "Król", "Wróbel", "Pawlak", "Walczak", "Stępień", "Michalak", "Sikora", "Baran", "Duda", "Szewczyk", "Pietrzak", "Marciniak", "Bąk", "Włodarczyk", "Kubiak", "Wilk", "Lis", "Mazurek", "Kaźmierczak", "Sobczak", "Cieślak", "Kołodziej", "Szymczak", "Szulc", "Błaszczyk", "Mróz" };
-
     protected Lock lock = new ReentrantLock();
+    @Inject
+    private BasicObjectManager objectManager;
+    private String[] firstNamesToChoose = {"Adam", "Andrzej", "Anna", "Abercjusz", "Abraham", "Achilles", "Ada", "Adelinda", "Ademar", "Adolf", "Adolfa", "Adolfina", "Adrian", "Adrianna", "Jacek", "Jacenty", "Jacław", "Jaczemir", "Jaczewoj", "Jadwiga", "Jagna", "Jagoda", "Jakert", "Jaktor", "Jakub", "Jakubina", "Jan"};
+    private String[] secondNamesToChoose = {"Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Kaczmarek", "Mazur", "Krawczyk", "Adamczyk", "Dudek", "Zając", "Wieczorek", "Król", "Wróbel", "Pawlak", "Walczak", "Stępień", "Michalak", "Sikora", "Baran", "Duda", "Szewczyk", "Pietrzak", "Marciniak", "Bąk", "Włodarczyk", "Kubiak", "Wilk", "Lis", "Mazurek", "Kaźmierczak", "Sobczak", "Cieślak", "Kołodziej", "Szymczak", "Szulc", "Błaszczyk", "Mróz"};
     private int randomUpBound = 2000;
     private int randomDownBound = 1000;
     private Train activeTrain;
 
     public void init(String[] args) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
 
+        objectManager.getCriticalSectionManager().setNumberOfNodes(Integer.parseInt(args[1]));
         // GET COMMANDS
         while (true) {
             try {
@@ -48,19 +45,18 @@ public class TrainManager {
                         if (commandWords.length == 2) {
                             this.activeTrain = (Train) objectManager.get(UUID.fromString(commandWords[1]));
                             System.out.println("Aktywny pociąg to \"" + this.activeTrain.getTrainName() + "\"");
-                        }
-                        else
+                        } else
                             throw new IOException("Zła liczba argumentów.");
                         break;
                     case "add":
-                        switch(commandWords[1]) {
+                        switch (commandWords[1]) {
                             case "train":
                                 if (!commandWords[2].matches("^[0-9]+$"))
                                     throw new IOException("Ilość siedzeń musi być liczbą!");
 
                                 String trainName = getStringFromQuotes(fullcommand);
 
-                                if(trainName.equals(""))
+                                if (trainName.equals(""))
                                     throw new IOException("Zła nazwa pociągu.");
                                 else {
                                     Train newTrain = new Train(trainName, Integer.parseInt(commandWords[2]));
@@ -180,22 +176,18 @@ public class TrainManager {
                         System.out.println("Nieznana komenda");
                         break;
                 }
-            }
-            catch(IOException e) {
+            } catch (IOException e) {
                 System.out.println(e.getMessage());
                 continue;
-            }
-            catch(NullPointerException e) {
+            } catch (NullPointerException e) {
                 System.out.println("Najprawdopodobniej ten obiekt nie istnieje.");
                 e.printStackTrace();
                 continue;
-            }
-            catch(IllegalArgumentException e) {
+            } catch (IllegalArgumentException e) {
                 System.out.println("Najprawdopodobniej zły identyfikator UUID.");
                 e.printStackTrace();
                 continue;
-            }
-            catch(ArrayIndexOutOfBoundsException e) {
+            } catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Za mało argumentów.");
                 e.printStackTrace();
                 continue;
@@ -228,7 +220,7 @@ public class TrainManager {
         Pattern trainNamePattern = Pattern.compile("\"[A-Za-z0-9żźćńółęąśŻŹĆĄŚĘŁÓŃ\\s]+\"$");
         Matcher matcher = trainNamePattern.matcher(fullcommand);
 
-        if(!matcher.find())
+        if (!matcher.find())
             return "";
         else
             return matcher.group().replaceAll("\"", "");
