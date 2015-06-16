@@ -12,8 +12,10 @@ then
 fi
 
 numberOfNodes=$1
+interface=$2
 for ((i=0; i<numberOfNodes; i++))
 do
+	sudo ip addr add 192.168.43.$(($i+10))/24 dev $interface
 	export CASSANDRA_HOME=./nodes/node_$i/apache-cassandra/
 	screen -X -S cassandra_$i quit
 	echo "Stopped node_$i"
