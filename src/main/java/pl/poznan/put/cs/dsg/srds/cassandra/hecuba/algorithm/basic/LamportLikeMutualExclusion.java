@@ -3,7 +3,6 @@ package pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.basic;
 import com.google.common.collect.Sets;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.algorithm.CriticalSectionManager;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.dao.LogEntryDAO;
 import pl.poznan.put.cs.dsg.srds.cassandra.hecuba.model.LogEntry;
@@ -27,13 +26,12 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
     protected String nodeId;
     @Inject
     protected LogEntryDAO logEntryDAO;
+    //@Value("${hecuba.numberOfNodes}")
+    protected Integer numberOfNodes = 1;
 
     public void setNumberOfNodes(Integer numberOfNodes) {
         this.numberOfNodes = numberOfNodes;
     }
-
-    //@Value("${hecuba.numberOfNodes}")
-    protected Integer numberOfNodes = 1;
 
     public void setNodeId(String nodeId) {
         this.nodeId = nodeId;
@@ -114,8 +112,8 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
             if (
                     logEntry.getAuthorId().equals(existingEntry.getAuthorId()) &&
                             logEntry.getLogType().equals(existingEntry.getLogType()) &&
-                            logEntry.getParent().equals(existingEntry.getParent()) &&
-                            logEntry.getTargets().equals(existingEntry.getTargets())) {
+                            logEntry.getParent().equals(existingEntry.getParent())
+                    ) {
                 return true;
             }
         }
