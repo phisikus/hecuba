@@ -21,10 +21,10 @@ numberOfNodes=$1
 rm -fr nodes
 mkdir nodes
 
-seeds="127.0.0.1"
-for ((k=2; k<=numberOfNodes; k++))
+seeds="192.168.43.10"
+for ((k=1; k<numberOfNodes; k++))
 do
-	seeds=$seeds",127.0.0.$k"
+	seeds=$seeds",192.168.43.$(($k+10))"
 done
 
 echo "I will create $numberOfNodes nodes..."
@@ -44,7 +44,7 @@ do
 	cat ./apache-cassandra/conf/cassandra.yaml | sed \
 	-e "s/Test Cluster/HecubaCluster/g" \
 	-e "s/127.0.0.1/$seeds/g" \
-	-e "s/localhost/127.0.0.$(($i+1))/g" >  ./nodes/node_$i/apache-cassandra/conf/cassandra.yaml
+	-e "s/localhost/192.168.43.$(($i+10))/g" >  ./nodes/node_$i/apache-cassandra/conf/cassandra.yaml
 
 	echo "Created directory and configuration for node $i"
 done
