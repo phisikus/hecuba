@@ -105,6 +105,7 @@ public class LamportLikeMutualExclusion implements CriticalSectionManager, Runna
         logEntry.setTargets(null);
         if (!weEnteredThatAlready(logEntry)) {
             logEntryDAO.create(logEntry);
+            logEntriesSent.add(logEntry);
         }
     }
 
