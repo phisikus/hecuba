@@ -31,169 +31,169 @@ public class TrainManager {
 
         objectManager.getCriticalSectionManager().setNumberOfNodes(Integer.parseInt(args[1]));
         // GET COMMANDS
-        while (true) {
-            try {
-                BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
-                System.out.print("?> ");
-                String fullcommand = bufferRead.readLine();
-                String[] commandWords = fullcommand.split(" ");
+        while (true) try {
+            BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+            System.out.print("?> ");
+            String fullcommand = bufferRead.readLine();
+            String[] commandWords = fullcommand.split(" ");
 
-                switch (commandWords[0]) {
-                    case "":
-                        break;
-                    case "act":
-                        if (commandWords.length == 2) {
-                            this.activeTrain = (Train) objectManager.get(UUID.fromString(commandWords[1]));
-                            System.out.println("Aktywny pociąg to \"" + this.activeTrain.getTrainName() + "\"");
-                        } else
-                            throw new IOException("Zła liczba argumentów.");
-                        break;
-                    case "add":
-                        switch (commandWords[1]) {
-                            case "train":
-                                if (!commandWords[2].matches("^[0-9]+$"))
-                                    throw new IOException("Ilość siedzeń musi być liczbą!");
+            switch (commandWords[0]) {
+                case "":
+                    break;
+                case "act":
+                    if (commandWords.length == 2) {
+                        this.activeTrain = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                        System.out.println("Aktywny pociąg to \"" + this.activeTrain.getTrainName() + "\"");
+                    } else
+                        throw new IOException("Zła liczba argumentów.");
+                    break;
+                case "add":
+                    switch (commandWords[1]) {
+                        case "train":
+                            if (!commandWords[2].matches("^[0-9]+$"))
+                                throw new IOException("Ilość siedzeń musi być liczbą!");
 
-                                String trainName = getStringFromQuotes(fullcommand);
+                            String trainName = getStringFromQuotes(fullcommand);
 
-                                if (trainName.equals(""))
-                                    throw new IOException("Zła nazwa pociągu.");
-                                else {
-                                    Train newTrain = new Train(trainName, Integer.parseInt(commandWords[2]));
-                                    System.out.println(newTrain.toString());
-                                    objectManager.create(newTrain);
+                            if (trainName.equals(""))
+                                throw new IOException("Zła nazwa pociągu.");
+                            else {
+                                Train newTrain = new Train(trainName, Integer.parseInt(commandWords[2]));
+                                System.out.println(newTrain.toString());
+                                objectManager.create(newTrain);
+                            }
+                            break;
+                        case "seat":
+                            if (this.activeTrain == null)
+                                throw new IOException("Brak aktywnego pociągu.");
+
+                            this.activeTrain = (Train) objectManager.get(this.activeTrain.getId());
+
+                            if (!commandWords[2].matches("^-?[0-9]+$")) {
+                                String passengerName = getStringFromQuotes(fullcommand);
+
+                                if (this.activeTrain.addSeat(passengerName)) {
+                                    objectManager.update(this.activeTrain.getId(), this.activeTrain);
+                                    System.out.println("Dodano pasażera: " + passengerName);
+                                } else {
+                                    System.out.println("Nie udało się dodać miejsca dla " + passengerName);
                                 }
-                                break;
-                            case "seat":
-                                if (this.activeTrain == null)
-                                    throw new IOException("Brak aktywnego pociągu.");
+                            } else if (commandWords.length > 3) {
+                                if (!commandWords[2].matches("^[0-9]+$"))
+                                    throw new IOException("Numer siedzenia musi być liczbą.");
 
-                                if (!commandWords[2].matches("^-?[0-9]+$")) {
-                                    String passengerName = getStringFromQuotes(fullcommand);
+                                String passengerName = getStringFromQuotes(fullcommand);
 
-                                    if (this.activeTrain.addSeat(passengerName)) {
-                                        objectManager.update(this.activeTrain.getId(), this.activeTrain);
-                                        System.out.println("Dodano pasażera: " + passengerName);
-                                    } else {
-                                        System.out.println("Nie udało się dodać miejsca dla " + passengerName);
-                                    }
-                                } else if (commandWords.length > 3) {
-                                    if (!commandWords[2].matches("^[0-9]+$"))
-                                        throw new IOException("Numer siedzenia musi być liczbą.");
+                                if (this.activeTrain.addSeat(Integer.parseInt(commandWords[2]), passengerName)) {
+                                    objectManager.update(this.activeTrain.getId(), this.activeTrain);
+                                    System.out.println("Dodano pasażera: " + passengerName + " na miejsce " + commandWords[2]);
+                                } else {
+                                    System.out.println("Nie udało się dodać miejsca dla " + passengerName);
+                                }
+                            } else
+                                throw new IOException("Zła komenda. Spróbuj \"add seat <seatID> \"<passenger>\"\".");
+                            break;
+                        default:
+                            throw new IOException("Zła komenda.");
+                    }
+                    break;
+                case "delete":
+                    if (commandWords[1].equals("trains") && commandWords.length == 2) {
 
-                                    String passengerName = getStringFromQuotes(fullcommand);
-
-                                    if (this.activeTrain.addSeat(Integer.parseInt(commandWords[2]), passengerName)) {
-                                        objectManager.update(this.activeTrain.getId(), this.activeTrain);
-                                        System.out.println("Dodano pasażera: " + passengerName + " na miejsce " + commandWords[2]);
-                                    } else {
-                                        System.out.println("Nie udało się dodać miejsca dla " + passengerName);
-                                    }
-                                } else
-                                    throw new IOException("Zła komenda. Spróbuj \"add seat <seatID> \"<passenger>\"\".");
-                                break;
-                            default:
-                                throw new IOException("Zła komenda.");
+                        // DELETING ALL OF THE TRAINS
+                        List<UUID> trainsToDelete = new ArrayList<>();
+                        List<SharedObject> trains = objectManager.getAllByType(Train.class);
+                        for (SharedObject train : trains) {
+                            Train temp = (Train) train;
+                            trainsToDelete.add(temp.getId());
                         }
-                        break;
-                    case "delete":
-                        if (commandWords[1].equals("trains") && commandWords.length == 2) {
+                        objectManager.delete(trainsToDelete);
+                        this.activeTrain = null;
+                    } else if (commandWords[1].equals("train")) {
 
-                            // DELETING ALL OF THE TRAINS
-                            List<UUID> trainsToDelete = new ArrayList<>();
-                            List<SharedObject> trains = objectManager.getAllByType(Train.class);
-                            for (SharedObject train : trains) {
-                                Train temp = (Train) train;
-                                trainsToDelete.add(temp.getId());
-                            }
-                            objectManager.delete(trainsToDelete);
+                        // DELETING TRAIN
+                        objectManager.delete(UUID.fromString(commandWords[2]));
+                    } else if (commandWords[1].equals("seats")) {
+
+                        // DELETING ALL OF THE TICKETS
+                        List<SharedObject> trains = objectManager.getAllByType(Train.class);
+                        for (SharedObject train : trains) {
+                            Train temp = (Train) train;
+                            if (temp.getSeats().size() == 0)
+                                continue;
+                            Map<Integer, String> emptySeats = new HashMap<>();
+                            temp.setSeats(emptySeats);
+                            objectManager.update(train.getId(), train);
                             this.activeTrain = null;
-                        } else if (commandWords[1].equals("train")) {
+                        }
+                    } else
+                        throw new IOException("Zła komenda. Spróbuj 'delete train <trainID>'.");
+                    break;
+                case "get":
+                    if (commandWords[1].equals("trains")) {
+                        List<SharedObject> trains = objectManager.getAllByType(Train.class);
 
-                            // DELETING TRAIN
-                            objectManager.delete(UUID.fromString(commandWords[2]));
-                        } else if (commandWords[1].equals("seats")) {
-
-                            // DELETING ALL OF THE TICKETS
-                            List<SharedObject> trains = objectManager.getAllByType(Train.class);
-                            for (SharedObject train : trains) {
-                                Train temp = (Train) train;
-                                if (temp.getSeats().size() == 0)
-                                    continue;
-                                Map<Integer, String> emptySeats = new HashMap<>();
-                                temp.setSeats(emptySeats);
-                                objectManager.update(train.getId(), train);
-                                this.activeTrain = null;
-                            }
-                        } else
-                            throw new IOException("Zła komenda. Spróbuj 'delete train <trainID>'.");
-                        break;
-                    case "get":
-                        if (commandWords[1].equals("trains")) {
-                            List<SharedObject> trains = objectManager.getAllByType(Train.class);
-
-                            for (SharedObject t : trains) {
-                                Train train = (Train) t;
-                                System.out.println(train.toString());
-                            }
-                        } else if (commandWords[1].equals("train")) {
-                            Train train = (Train) objectManager.get(UUID.fromString(commandWords[2]));
+                        for (SharedObject t : trains) {
+                            Train train = (Train) t;
                             System.out.println(train.toString());
-                        } else
-                            throw new IOException("Zła komenda. Spróbuj 'get trains' albo 'get train <trainID>'.");
-                        break;
-                    case "help":
-                        this.printHelp();
-                        break;
-                    case "randomadd":
-                        Train train = (Train) objectManager.get(UUID.fromString(commandWords[1]));
-                        Random gen = new Random();
-
-                        while (true) {
-                            Thread.sleep(gen.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
-                            String passenger = this.firstNamesToChoose[gen.nextInt(this.firstNamesToChoose.length)] + " " +
-                                    this.secondNamesToChoose[gen.nextInt(this.secondNamesToChoose.length)];
-                            //lock.lock();
-
-                            int seat = train.addFreeRandomSeat(passenger);
-                            if (seat > -1) {
-                                objectManager.update(train.getId(), train);
-                                System.out.println("Dodano pasażera " + passenger + " na miejsce " + seat);
-                            } else {
-                                System.out.println("Nie udało się dodać pasażera " + passenger);
-                            }
-                            //lock.unlock();
                         }
-                    case "randomdel":
-                        Train trainDel = (Train) objectManager.get(UUID.fromString(commandWords[1]));
-                        Random genDel = new Random();
-                        while (true) {
-                            Thread.sleep(genDel.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                    } else if (commandWords[1].equals("train")) {
+                        Train train = (Train) objectManager.get(UUID.fromString(commandWords[2]));
+                        System.out.println(train.toString());
+                    } else
+                        throw new IOException("Zła komenda. Spróbuj 'get trains' albo 'get train <trainID>'.");
+                    break;
+                case "help":
+                    this.printHelp();
+                    break;
+                case "randomadd":
+                    Train train = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                    Random gen = new Random();
 
-                            int seat = trainDel.delRandomSeat();
+                    while (true) {
+                        Thread.sleep(gen.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                        String passenger = this.firstNamesToChoose[gen.nextInt(this.firstNamesToChoose.length)] + " " +
+                                this.secondNamesToChoose[gen.nextInt(this.secondNamesToChoose.length)];
+                        //lock.lock();
+
+                        int seat = train.addFreeRandomSeat(passenger);
+                        if (seat > -1) {
+                            objectManager.update(train.getId(), train);
+                            System.out.println("Dodano pasażera " + passenger + " na miejsce " + seat);
+                        } else {
+                            System.out.println("Nie udało się dodać pasażera " + passenger);
                         }
-                    default:
-                        System.out.println("Nieznana komenda");
-                        break;
-                }
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-                continue;
-            } catch (NullPointerException e) {
-                System.out.println("Najprawdopodobniej ten obiekt nie istnieje.");
-                e.printStackTrace();
-                continue;
-            } catch (IllegalArgumentException e) {
-                System.out.println("Najprawdopodobniej zły identyfikator UUID.");
-                e.printStackTrace();
-                continue;
-            } catch (ArrayIndexOutOfBoundsException e) {
-                System.out.println("Za mało argumentów.");
-                e.printStackTrace();
-                continue;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                        //lock.unlock();
+                    }
+                case "randomdel":
+                    Train trainDel = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                    Random genDel = new Random();
+                    while (true) {
+                        Thread.sleep(genDel.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+
+                        int seat = trainDel.delRandomSeat();
+                    }
+                default:
+                    System.out.println("Nieznana komenda");
+                    break;
             }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            continue;
+        } catch (NullPointerException e) {
+            System.out.println("Najprawdopodobniej ten obiekt nie istnieje.");
+            e.printStackTrace();
+            continue;
+        } catch (IllegalArgumentException e) {
+            System.out.println("Najprawdopodobniej zły identyfikator UUID.");
+            e.printStackTrace();
+            continue;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Za mało argumentów.");
+            e.printStackTrace();
+            continue;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 

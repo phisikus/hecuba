@@ -2,758 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75f4d841-2159-4586-9bb0-1fa2185c183e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591609.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591610.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591611.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591612.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591613.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591614.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591615.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591616.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591617.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591618.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591619.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591620.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591621.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591622.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/commitlog/CommitLog-4-1434020591623.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_logtype_idx-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/hecuba-logentries.logentries_parent_idx-ka-3-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020730313-logentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_logtype_idx-ka-7-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/hecuba-logentries.logentries_parent_idx-ka-4-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732028-logentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020732537-logentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries-ka-7-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_logtype_idx-ka-8-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/hecuba-logentries.logentries_parent_idx-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734063-logentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020734657-logentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries-ka-8-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_logtype_idx-ka-9-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/hecuba-logentries.logentries_parent_idx-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/logentries-de1f14600e6611e580ad15ce9d2f91cf/snapshots/1434020736138-logentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/hecuba-objectentries.objectentries_objecttype_idx-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020729703-objectentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020730884-objectentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020732296-objectentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020732826-objectentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020734335-objectentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/hecuba/objectentries-deb9cdc00e6611e580ad15ce9d2f91cf/snapshots/1434020735161-objectentries/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/IndexInfo-9f5c6374d48532299a0a5094af9ad1e3/system-IndexInfo-ka-3-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-21-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-22-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-23-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433826893311-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433884508025-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433949647030-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433949727638-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433952973389-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433953004645-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433953402237-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433953988065-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433954090603-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433954406266-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433955461460-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1434001764611-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1434016474617-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1434020593439-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-70-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-3-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-4-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-5-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-21-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-22-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-23-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-21-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-22-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-23-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-25-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-17-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-17-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-21-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-10-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-9-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/saved_caches/system-IndexInfo-9f5c6374d48532299a0a5094af9ad1e3-KeyCache-b.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/saved_caches/system-local-7ad54392bcdd35a684174e047860b377-KeyCache-b.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/saved_caches/system-schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697-KeyCache-b.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/data/saved_caches/system-schema_columns-296e9c049bec3085827dc17d3df2122a-KeyCache-b.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/commitlog/CommitLog-4-1433955492012.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/commitlog/CommitLog-4-1433955492013.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/commitlog/CommitLog-4-1433955492014.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433954398273-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433955493817-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-6-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-7-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/commitlog/CommitLog-4-1433955492142.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/commitlog/CommitLog-4-1433955492143.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/commitlog/CommitLog-4-1433955492144.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433954397505-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433955493897-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/commitlog/CommitLog-4-1433955492509.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/commitlog/CommitLog-4-1433955492510.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/commitlog/CommitLog-4-1433955492511.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/system-compaction_history-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433954397445-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/compactions_in_progress-55080ab05d9c388690a4acb25fe1f77b/snapshots/1433955494149-compactions_in_progress/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-10-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-9-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/peers-37f71aca7dc2383ba70672528af04d4f/system-peers-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-2-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/size_estimates-618f817b005f3678b8a453f3930b8e86/system-size_estimates-ka-3-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-1-TOC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-CompressionInfo.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Data.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Digest.sha1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Filter.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Statistics.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-Summary.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/sstable_activity-5a1ff267ace03f128563cfae6103c65e/system-sstable_activity-ka-2-TOC.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/opis.odt" afterPath="$PROJECT_DIR$/opis.odt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-CompressionInfo.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-CompressionInfo.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Data.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Statistics.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.~lock.opis.odt#" afterPath="$PROJECT_DIR$/.~lock.opis.odt#" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/local-7ad54392bcdd35a684174e047860b377/system-local-ka-5-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columnfamilies-45f5b36024bc3f83a3631034ea4fa697/system-schema_columnfamilies-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_columns-296e9c049bec3085827dc17d3df2122a/system-schema_columns-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_keyspaces-b0f2235744583cdb9631c43e59ce3676/system-schema_keyspaces-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_triggers-0359bc7171233ee19a4ab9dfb11fc125/system-schema_triggers-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-Digest.sha1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_0/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_1/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" afterPath="$PROJECT_DIR$/cluster/nodes/node_2/apache-cassandra/data/data/system/schema_usertypes-3aa752254f82350b8d5c430fa221fa0a/system-schema_usertypes-ka-1-TOC.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cluster/apache-cassandra/logs/system.log" afterPath="$PROJECT_DIR$/cluster/apache-cassandra/logs/system.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java" afterPath="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hecuba.iws" />
@@ -786,71 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TrainManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Config.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicObjectManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/BasicObjectManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17806041">
-              <caret line="8" column="114" selection-start-line="8" selection-start-column="114" selection-end-line="8" selection-end-column="114" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LamportLikeMutualExclusion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/LamportLikeMutualExclusion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.55445546">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -860,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/Train.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -882,14 +73,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/Train.java" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/LamportLikeMutualExclusion.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/BasicObjectManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/Train.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java" />
       </list>
     </option>
   </component>
@@ -904,9 +95,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="746" />
+    <option name="width" value="1366" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -950,7 +140,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -1065,6 +254,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1276,7 +466,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="746" extended-state="7" />
+    <frame x="0" y="0" width="1366" height="742" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1288,7 +478,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28038067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28021148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1330,42 +520,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/BasicObjectManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="8" column="114" selection-start-line="8" selection-start-column="114" selection-end-line="8" selection-end-column="114" />
           <folding />
         </state>
       </provider>
@@ -1390,7 +548,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1516#1517#0" expanded="false" />
+            <element signature="e#5429#5430#0" expanded="false" />
+            <element signature="e#5482#5483#0" expanded="false" />
+            <element signature="e#8086#8087#0" expanded="false" />
+            <element signature="e#8139#8140#0" expanded="false" />
+            <element signature="e#9076#9077#0" expanded="false" />
+            <element signature="e#9107#9108#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,7 +592,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1462,7 +634,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1516#1517#0" expanded="false" />
+            <element signature="e#5429#5430#0" expanded="false" />
+            <element signature="e#5482#5483#0" expanded="false" />
+            <element signature="e#8086#8087#0" expanded="false" />
+            <element signature="e#8139#8140#0" expanded="false" />
+            <element signature="e#9076#9077#0" expanded="false" />
+            <element signature="e#9107#9108#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/BasicObjectManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/LamportLikeMutualExclusion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1516#1517#0" expanded="false" />
+            <element signature="e#5429#5430#0" expanded="false" />
+            <element signature="e#5482#5483#0" expanded="false" />
+            <element signature="e#8086#8087#0" expanded="false" />
+            <element signature="e#8139#8140#0" expanded="false" />
+            <element signature="e#9076#9077#0" expanded="false" />
+            <element signature="e#9107#9108#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1609,22 +879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/Train.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1645,7 +899,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1304#1305#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1480#1481#0" expanded="false" />
+            <element signature="e#1516#1517#0" expanded="false" />
+            <element signature="e#5429#5430#0" expanded="false" />
+            <element signature="e#5482#5483#0" expanded="false" />
+            <element signature="e#8086#8087#0" expanded="false" />
+            <element signature="e#8139#8140#0" expanded="false" />
+            <element signature="e#9076#9077#0" expanded="false" />
+            <element signature="e#9107#9108#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1656,34 +922,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/BasicObjectManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/hecuba/algorithm/basic/BasicObjectManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17806041">
-          <caret line="8" column="114" selection-start-line="8" selection-start-column="114" selection-end-line="8" selection-end-column="114" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/Train.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/poznan/put/cs/dsg/srds/cassandra/railroad/TrainManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55445546">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding />
         </state>
       </provider>
