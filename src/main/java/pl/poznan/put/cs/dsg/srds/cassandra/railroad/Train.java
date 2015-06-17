@@ -77,6 +77,17 @@ public class Train extends SharedObject {
         return true;
     }
 
+    public int addRandomSeat(String passenger) {
+        Random gen = new Random();
+        int seatTaken = gen.nextInt(this.numberOfSeats);
+
+        if (!this.seats.containsKey(seatTaken)) {
+            this.seats.put(seatTaken, passenger);
+            return seatTaken;
+        } else
+            return -1;
+    }
+
     public int addFreeRandomSeat(String passenger) {
         if (this.seats.size() == this.numberOfSeats)
             return -1;

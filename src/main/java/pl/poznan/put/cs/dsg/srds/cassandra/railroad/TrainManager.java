@@ -147,23 +147,42 @@ public class TrainManager {
                     this.printHelp();
                     break;
                 case "randomadd":
-                    Train train = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                    Train trainToFreeRandomAdd;
                     Random gen = new Random();
 
                     while (true) {
                         Thread.sleep(gen.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                        trainToFreeRandomAdd = (Train) objectManager.get(UUID.fromString(commandWords[1]));
                         String passenger = this.firstNamesToChoose[gen.nextInt(this.firstNamesToChoose.length)] + " " +
                                 this.secondNamesToChoose[gen.nextInt(this.secondNamesToChoose.length)];
                         //lock.lock();
 
-                        int seat = train.addFreeRandomSeat(passenger);
+                        int seat = trainToFreeRandomAdd.addFreeRandomSeat(passenger);
                         if (seat > -1) {
-                            objectManager.update(train.getId(), train);
+                            objectManager.update(trainToFreeRandomAdd.getId(), trainToFreeRandomAdd);
                             System.out.println("Dodano pasażera " + passenger + " na miejsce " + seat);
                         } else {
                             System.out.println("Nie udało się dodać pasażera " + passenger);
                         }
                         //lock.unlock();
+                    }
+                case "randomadd2":
+                    Train trainToRandomAdd;
+                    Random genToRandomAdd = new Random();
+
+                    while (true) {
+                        Thread.sleep(genToRandomAdd.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                        trainToRandomAdd = (Train) objectManager.get(UUID.fromString(commandWords[1]));
+                        String passenger = this.firstNamesToChoose[genToRandomAdd.nextInt(this.firstNamesToChoose.length)] + " " +
+                                this.secondNamesToChoose[genToRandomAdd.nextInt(this.secondNamesToChoose.length)];
+
+                        int seat = trainToRandomAdd.addRandomSeat(passenger);
+                        if (seat > -1) {
+                            objectManager.update(trainToRandomAdd.getId(), trainToRandomAdd);
+                            System.out.println("Dodano pasażera " + passenger + " na miejsce " + seat);
+                        } else {
+                            System.out.println("Nie udało się dodać pasażera " + passenger);
+                        }
                     }
                 case "randomdel":
                     Train trainDel = (Train) objectManager.get(UUID.fromString(commandWords[1]));
