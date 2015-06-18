@@ -151,7 +151,7 @@ public class TrainManager {
                     Random gen = new Random();
 
                     while (true) {
-                        Thread.sleep(gen.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                        //Thread.sleep(gen.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
                         trainToFreeRandomAdd = (Train) objectManager.get(UUID.fromString(commandWords[1]));
                         String passenger = this.firstNamesToChoose[gen.nextInt(this.firstNamesToChoose.length)] + " " +
                                 this.secondNamesToChoose[gen.nextInt(this.secondNamesToChoose.length)];
@@ -171,7 +171,7 @@ public class TrainManager {
                     Random genToRandomAdd = new Random();
 
                     while (true) {
-                        Thread.sleep(genToRandomAdd.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
+                        //Thread.sleep(genToRandomAdd.nextInt(this.randomUpBound - this.randomDownBound) + this.randomDownBound);
                         trainToRandomAdd = (Train) objectManager.get(UUID.fromString(commandWords[1]));
                         String passenger = this.firstNamesToChoose[genToRandomAdd.nextInt(this.firstNamesToChoose.length)] + " " +
                                 this.secondNamesToChoose[genToRandomAdd.nextInt(this.secondNamesToChoose.length)];
@@ -179,9 +179,9 @@ public class TrainManager {
                         int seat = trainToRandomAdd.addRandomSeat(passenger);
                         if (seat > -1) {
                             objectManager.update(trainToRandomAdd.getId(), trainToRandomAdd);
-                            System.out.println("Dodano pasażera " + passenger + " na miejsce " + seat);
+                            System.out.println("DODANO: " + passenger);
                         } else {
-                            System.out.println("Nie udało się dodać pasażera " + passenger);
+                            System.out.println("NIE DODANO: " + passenger);
                         }
                     }
                 case "randomdel":
