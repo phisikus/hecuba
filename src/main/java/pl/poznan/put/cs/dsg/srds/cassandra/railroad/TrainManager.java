@@ -23,8 +23,8 @@ public class TrainManager {
     private BasicObjectManager objectManager;
     private String[] firstNamesToChoose = {"Adam", "Andrzej", "Anna", "Abercjusz", "Abraham", "Achilles", "Ada", "Adelinda", "Ademar", "Adolf", "Adolfa", "Adolfina", "Adrian", "Adrianna", "Jacek", "Jacenty", "Jacław", "Jaczemir", "Jaczewoj", "Jadwiga", "Jagna", "Jagoda", "Jakert", "Jaktor", "Jakub", "Jakubina", "Jan"};
     private String[] secondNamesToChoose = {"Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Kaczmarek", "Mazur", "Krawczyk", "Adamczyk", "Dudek", "Zając", "Wieczorek", "Król", "Wróbel", "Pawlak", "Walczak", "Stępień", "Michalak", "Sikora", "Baran", "Duda", "Szewczyk", "Pietrzak", "Marciniak", "Bąk", "Włodarczyk", "Kubiak", "Wilk", "Lis", "Mazurek", "Kaźmierczak", "Sobczak", "Cieślak", "Kołodziej", "Szymczak", "Szulc", "Błaszczyk", "Mróz"};
-    private int randomUpBound = 2000;
-    private int randomDownBound = 1000;
+    private int randomUpBound = 400;
+    private int randomDownBound = 300;
     private Train activeTrain;
 
     public void init(String[] args) throws IOException, InstantiationException, IllegalAccessException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException {
