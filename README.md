@@ -7,11 +7,11 @@ The general idea is that you create multiple Cassandra replicas. In the "cluster
 
 You can run tests using Maven:
 
-  mvn clean test
+    mvn clean test
 
 You can run single node using:
 
-  mvn compile exec:java -Dexec.mainClass="pl.poznan.put.cs.dsg.srds.cassandra.Main"
+    mvn compile exec:java -Dexec.mainClass="pl.poznan.put.cs.dsg.srds.cassandra.Main"
 
 Check config.properties and set "hecuba.numberOfNodes" property according to the number of nodes that you will be using.
 
